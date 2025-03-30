@@ -8,7 +8,7 @@ This website is designed to accompany warming stripes buttons distributed at cli
 
 ## Public Domain Dedication for the term “terramedic”
 
-Leila Hadj-Chikh came up with the name **“TerraMedics”** as the name for her team at the Make for the Planet competition at the inaugural Earth Optimism Summit in 2017 in Washington, DC.
+Leila Hadj-Chikh came up with the word **“TerraMedics”** as the name for her team at [Conservation X Labs'](https://www.conservationxlabs.com/) [Make for the Planet](https://www.makefortheplanet.com/) competition at the inaugural Earth Optimism Summit in 2017 in Washington, DC.
 
 The term "terramedic" is now intentionally placed in the public domain by the originator of this term. It is free for anyone to use, share, adapt, and apply in any context — without restriction or attribution.
 

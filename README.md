@@ -2,7 +2,7 @@
 
 Terramedic is a SvelteKit-powered platform providing resources, volunteer opportunities, and actionable solutions for climate advocacy and sustainable living.
 
-## Climate Action Website
+## Climate Action Hub
 
 This website is designed to accompany warming stripes buttons distributed at climate outreach events. The site explains what warming stripes represent and guides visitors toward meaningful climate action through volunteering or donations.
 

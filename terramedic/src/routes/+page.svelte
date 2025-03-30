@@ -11,7 +11,7 @@
 </script>
 
 <svelte:head>
-	<title>terramedic | Climate Action</title>
+	<title>Terramedic | Climate Action Hub</title>
 	<meta
 		name="description"
 		content="Learn about warming stripes and how you can help address climate change through volunteering or donations."

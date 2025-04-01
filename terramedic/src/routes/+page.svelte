@@ -3,8 +3,6 @@
   import ActionButton from '$lib/components/ActionButton.svelte';
   import Footer from '$lib/components/Footer.svelte';
   import HeroImage from '$lib/components/HeroImage.svelte';
-  import ImageCarousel from '$lib/components/ImageCarousel.svelte';
-  import Logo from '$lib/components/Logo.svelte';
   import { Card, Heading, A } from 'flowbite-svelte';
 
   const images = ['/images/2025GenerationsStripes.jpg', '/images/20252024ReviewGlobal.jpg'];

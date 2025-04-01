@@ -33,11 +33,11 @@
       <div class="h-12"></div>
 
       <!-- Main Content -->
-      <div class="mx-auto mb-12 mt-8 max-w-3xl">
+      <div class="mx-auto mt-8 mb-12 max-w-3xl">
         <Heading
           tag="h1"
           color="text-gray-700"
-          class="mb-4 mt-8 text-center text-3xl font-extrabold md:text-4xl lg:text-5xl"
+          class="mt-8 mb-4 text-center text-3xl font-extrabold md:text-4xl lg:text-5xl"
           >Climate Crisis: Our Shared Challenge</Heading
         >
 
@@ -68,7 +68,7 @@
           </div>
         </div>
 
-        <div class="mb-8 mt-8 text-center">
+        <div class="mt-8 mb-8 text-center">
           <A href="/resources" color="text-gray-600" class="text-3xl hover:text-blue-600">
             Already a climate advocate? Find resources here →
           </A>

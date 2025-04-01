@@ -15,7 +15,7 @@
   <!-- Navbar Content -->
   <Navbar
     color="white"
-    class="relative z-10 border-b border-gray-200 bg-white bg-opacity-75 px-4 py-2.5 lg:px-6"
+    class="bg-opacity-75 relative z-10 border-b border-gray-200 bg-white px-4 py-2.5 lg:px-6"
   >
     <NavBrand href="/" class="relative flex items-center justify-center rounded-md bg-white p-2">
       <div class="logo-container">
@@ -23,7 +23,7 @@
       </div>
     </NavBrand>
     <NavHamburger class="block rounded-md bg-white p-2 shadow-md" />
-    <NavUl class="duration-30 w-fulltransition-all order-1 flex flex-col items-end">
+    <NavUl class="w-fulltransition-all order-1 flex flex-col items-end duration-30">
       <NavLi class="my-2" href="/" active={activeUrl === '/'}>Home</NavLi>
       <NavLi class="my-2" href="/about" active={activeUrl === '/about'}>About</NavLi>
       <NavLi class="my-2" href="/volunteer" active={activeUrl === '/volunteer'}>Volunteer</NavLi>

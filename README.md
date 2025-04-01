@@ -19,6 +19,7 @@ We encourage everyone to use “terramedics” to describe individuals and commu
 ## Project Overview
 
 This website aims to:
+
 1. Educate people about warming stripes and climate change
 2. Connect individuals with volunteer opportunities at climate organizations
 3. Facilitate donations to effective climate action groups
@@ -71,27 +72,10 @@ yarn dev
 - `/tests` - Playwright tests
 - `/.storybook` - Storybook configuration
 
-## Key Features
-
-1. **Warming Stripes Visualization**: A visual representation of climate data
-2. **Educational Content**: Information about what warming stripes mean
-3. **Volunteer Opportunities**: Curated list of climate organizations needing volunteers
-4. **Donation Options**: Featured organizations accepting financial contributions
-5. **Responsive Design**: Mobile-friendly layout
-
-## Deployment
-
-This project is set up for easy deployment to Netlify:
-
-1. Push your code to GitHub
-2. Connect your repository to Netlify
-3. Configure build settings:
-   - Build command: `npm run build`
-   - Publish directory: `build`
-
 ## Adding Organizations
 
 To add or update organizations, edit the data files in:
+
 - `src/lib/data/volunteer-orgs.js` - For volunteer opportunities
 - `src/lib/data/donation-orgs.js` - For donation options
 - `src/lib/data/resource-orgs.js` - For resources available to climate advocates
@@ -107,6 +91,7 @@ This project is licensed under the GNU General Public License v3.0 for code and 
 - All the climate activists working to build a sustainable future
 
 This project was developed as a collaboration between humans and a group of AI tools, including:
+
 - [GitHub Copilot](https://github.com/features/copilot)
 - [Claude](https://claude.ai/) by Anthropic
 - [ChatGPT](https://chat.openai.com/) by OpenAI

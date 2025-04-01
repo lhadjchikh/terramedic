@@ -7,11 +7,11 @@
   export let type = 'primary'; // primary or alternative
   export let size = 'lg';
 
-  // Map our types to Flowbite color props
-  $: color = type === 'primary' ? 'blue' : 'green';
+  // Dynamically set the Tailwind class based on the type
+  $: buttonClass = type === 'primary' ? 'bg-terra-blue text-white' : 'bg-terra-green text-white';
 </script>
 
-<Button {color} {size} {href} class="mx-auto justify-center">
+<Button class={`mx-auto justify-center ${buttonClass}`} {size} {href}>
   <span class="mr-2">{text}</span>
   <ArrowRightOutline class="h-4 w-4" />
 </Button>

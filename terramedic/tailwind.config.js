@@ -14,7 +14,7 @@ export default {
         'terra-light': '#ecf0f1'
       },
       fontFamily: {
-        sans: ['Open Snas', 'sans-serif'],
+        sans: ['Open Sans', 'sans-serif'],
         display: ['Montserrat', 'sans-serif']
       }
     }

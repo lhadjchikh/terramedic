@@ -5,7 +5,7 @@
 <div
   class="hero-container relative h-[24rem] w-full overflow-hidden rounded-lg bg-gray-100 md:h-[32rem] lg:h-[40rem]"
 >
-  <img src="/images/hero.svg" alt={altText} class="absolute inset-0 h-full w-full object-cover" />
+  <img src="/images/hero.svg" alt={altText} class="absolute inset-0 h-full w-full object-contain" />
 </div>
 
 <style>

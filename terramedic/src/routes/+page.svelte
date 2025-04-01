@@ -23,15 +23,14 @@
 
   <main class="flex-grow">
     <div class="container mx-auto px-4 py-8 md:py-12">
-      <div
-        class="hero-container relative aspect-[16/9] w-full overflow-hidden rounded-lg bg-gray-100"
-      >
-        <img
-          src="/images/hero.svg"
-          alt="Anyone can become a terramedic"
-          class="absolute inset-0 h-full w-full object-contain"
-        />
-      </div>
+      <HeroImage
+        src="/images/2025GenerationsStripes.jpg"
+        alt="Anyone can become a terramedic"
+        class="hero-container mb-8 rounded-lg shadow-lg"
+        size="large"
+        title="Transform awareness into action"
+        description="The warming stripes you see represent our planet's rising temperatures over time. Each colored stripe is one year - blue for cooler and red for warmer than average. The clear shift from blue to red tells the story of our warming planet."
+      />
 
       <!-- Main Content -->
       <div class="mx-auto mb-12 max-w-3xl">
@@ -100,9 +99,3 @@
 
   <Footer />
 </div>
-
-<style>
-  .hero-container {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-</style>

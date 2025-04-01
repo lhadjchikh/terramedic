@@ -1,6 +1,6 @@
 <script>
   import NavBar from '$lib/components/NavBar.svelte';
-  import ActionButton from '$lib/components/ActionButton.svelte';
+  import ActionCards from '$lib/components/ActionCards.svelte';
   import Footer from '$lib/components/Footer.svelte';
   import HeroImage from '$lib/components/HeroImage.svelte';
   import { Card, Heading, A } from 'flowbite-svelte';
@@ -35,8 +35,8 @@
         <Heading tag="h1" class="mb-4 text-center text-3xl font-extrabold md:text-4xl lg:text-5xl"
           >Climate Crisis: Our Shared Challenge</Heading
         >
-        <div class="flex flex-col items-center gap-8 md:flex-row">
-          <!-- Static Image -->
+        <!-- Static Image -->
+        <div class="flex w-full flex-col items-center gap-8 md:flex-row">
           <div class="w-full flex-shrink-0 md:w-1/2">
             <img
               src="/images/2025GenerationsStripes.jpg"
@@ -44,38 +44,29 @@
               class="w-full rounded-lg object-contain shadow-md"
             />
           </div>
-
-          <!-- Text Content -->
-          <div class="w-full text-center md:w-1/2 md:text-left">
-            <p class="mb-6 text-2xl text-gray-700">
-              The warming stripes you see represent our planet's rising temperatures over time. Each
-              colored stripe is one year - blue for cooler and red for warmer than average. The
-              clear shift from blue to red tells the story of our warming planet.
-            </p>
-            <p class="mb-10 text-3xl text-gray-700">
-              Join us in taking action. Whether you have time or money to contribute, you can make a
-              difference in addressing climate change.
-            </p>
-
-            <!-- Action Buttons -->
-            <div class="mb-6 flex flex-col justify-center gap-4 sm:flex-row sm:gap-8">
-              <ActionButton text="I have time to spare" href="/volunteer" type="primary" />
-              <ActionButton text="I have money to spare" href="/donate" type="secondary" />
-            </div>
-
-            <div class="text-center text-3xl md:text-left">
-              <A href="/other-ways" class="text-blue-600 hover:underline">
-                No time or money? We know the feeling. See other ways you can help →
-              </A>
-            </div>
+          <div class="w-full text-2xl text-gray-700">
+            The warming stripes you see represent our planet's rising temperatures over time. Each
+            colored stripe is one year - blue for cooler and red for warmer than average. The clear
+            shift from blue to red tells the story of our warming planet.
           </div>
         </div>
 
-        <div class="mt-2 text-center">
-          <A href="/resources" color="text-gray-600" class="text-3xl hover:text-blue-600">
-            Already a climate advocate? Find resources here →
-          </A>
+        <!-- Action Buttons -->
+        <div class="mx-auto mb-12 max-w-3xl">
+          <div class="mb-6 text-2xl text-gray-700">
+            Join us in taking action. Whether you have time or money to contribute, you can make a
+            difference in addressing climate change.
+          </div>
+          <div class="mb-6 flex flex-col justify-center gap-4 sm:flex-row sm:gap-8">
+            <ActionCards />
+          </div>
         </div>
+      </div>
+
+      <div class="mt-2 text-center">
+        <A href="/resources" color="text-gray-600" class="text-3xl hover:text-blue-600">
+          Already a climate advocate? Find resources here →
+        </A>
       </div>
 
       <!-- About Section -->

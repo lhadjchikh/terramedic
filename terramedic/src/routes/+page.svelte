@@ -30,44 +30,52 @@
         description="The warming stripes you see represent our planet's rising temperatures over time. Each colored stripe is one year - blue for cooler and red for warmer than average. The clear shift from blue to red tells the story of our warming planet."
       />
 
+      <div class="h-12"></div>
+
       <!-- Main Content -->
-      <div class="mx-auto mb-12 max-w-3xl">
-        <Heading tag="h1" class="mb-4 text-center text-3xl font-extrabold md:text-4xl lg:text-5xl"
+      <div class="mx-auto mb-12 mt-8 max-w-3xl">
+        <Heading
+          tag="h1"
+          color="text-gray-700"
+          class="mb-4 mt-8 text-center text-3xl font-extrabold md:text-4xl lg:text-5xl"
           >Climate Crisis: Our Shared Challenge</Heading
         >
-        <!-- Static Image -->
-        <div class="flex w-full flex-col items-center gap-8 md:flex-row">
-          <div class="w-full flex-shrink-0 md:w-1/2">
+
+        <!-- Static Image Section - Full Width -->
+        <div class="flex w-full flex-wrap">
+          <div class="w-full p-4 text-3xl text-gray-700 md:w-1/2">
+            The warming stripes (a.k.a. climate stripes) represent our planet's rising temperatures
+            over time. Each colored stripe is one year - blue for cooler and red for warmer than
+            average. The clear shift from blue to red tells the story of our warming planet.
+          </div>
+          <div class="w-full p-4 md:w-1/2">
             <img
               src="/images/2025GenerationsStripes.jpg"
               alt="2025 Generations Stripes"
               class="w-full rounded-lg object-contain shadow-md"
             />
           </div>
-          <div class="w-full text-2xl text-gray-700">
-            The warming stripes you see represent our planet's rising temperatures over time. Each
-            colored stripe is one year - blue for cooler and red for warmer than average. The clear
-            shift from blue to red tells the story of our warming planet.
-          </div>
         </div>
 
-        <!-- Action Buttons -->
-        <div class="mx-auto mb-12 max-w-3xl">
-          <div class="mb-6 text-2xl text-gray-700">
+        <!-- Action Buttons Section - Full Width -->
+        <div class="flex w-full flex-wrap items-center justify-center">
+          <div class="w-full p-4 text-3xl text-gray-700 md:w-1/2">
             Join us in taking action. Whether you have time or money to contribute, you can make a
             difference in addressing climate change.
           </div>
-          <div class="mb-6 flex flex-col justify-center gap-4 sm:flex-row sm:gap-8">
+          <div class="flex w-full items-center justify-center p-4 md:w-1/2">
             <ActionCards />
           </div>
         </div>
+
+        <div class="mb-8 mt-8 text-center">
+          <A href="/resources" color="text-gray-600" class="text-3xl hover:text-blue-600">
+            Already a climate advocate? Find resources here →
+          </A>
+        </div>
       </div>
 
-      <div class="mt-2 text-center">
-        <A href="/resources" color="text-gray-600" class="text-3xl hover:text-blue-600">
-          Already a climate advocate? Find resources here →
-        </A>
-      </div>
+      <div class="h-12"></div>
 
       <!-- About Section -->
       <Card class="mx-auto max-w-3xl">

@@ -10,7 +10,7 @@
 </script>
 
 <Card img={imageUrl} class="h-full">
-  <h3 class="mb-2 text-xl font-semibold">{name}</h3>
+  <h3 class="mb-2 text-xl font-bold text-white">{name}</h3>
 
   {#if tags.length > 0}
     <div class="mb-3 flex flex-wrap gap-1">
@@ -20,7 +20,7 @@
     </div>
   {/if}
 
-  <p class="mb-4 text-white">{description}</p>
+  <p class="mb-4 text-gray-400">{description}</p>
 
   <div class="mt-auto">
     <Button color="blue" href={websiteUrl} target="_blank" rel="noopener noreferrer" class="w-full">

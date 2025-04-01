@@ -10,18 +10,15 @@ export default {
       colors: {
         'terra-blue': '#4682b5',
         'terra-green': '#76c268',
-        'terra-dark': '#2c3e50',
-        'terra-light': '#ecf0f1'
+        'terra-dark-blue': '#2c3e50',
+        'terra-dark-green': '#4e7a46'
       },
       fontFamily: {
-        sans: ['Open Snas', 'sans-serif'],
+        sans: ['Open Sans', 'sans-serif'],
         display: ['Montserrat', 'sans-serif']
       }
     }
   },
-  plugins: [
-    require('flowbite/plugin'),
-    require('@tailwindcss/aspect-ratio') // Add this line
-  ],
+  plugins: [require('flowbite/plugin'), require('@tailwindcss/aspect-ratio')],
   darkMode: 'class'
 };

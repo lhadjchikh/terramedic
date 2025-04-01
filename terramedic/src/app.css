@@ -2,5 +2,15 @@
 @import 'flowbite';
 
 @tailwind base;
+
+@layer base {
+  :root {
+    --terra-blue-color: #4682b5;
+    --terra-green-color: #76c268;
+    --terra-dark-blue-color: #2c3e50;
+    --terra-dark-green-color: #4e7a46;
+  }
+}
+
 @tailwind components;
 @tailwind utilities;

@@ -57,16 +57,16 @@
 
     <!-- Main Content Section -->
     <section class="section container-narrow">
-      <h1 class="section-title text-terra-dark-blue">Climate Crisis: Our Shared Challenge</h1>
+      <h2 class="section-title text-terra-dark-blue">Climate Crisis: Our Shared Challenge</h2>
 
       <!-- Understanding Warming Stripes Section -->
       <div class="mt-16 overflow-hidden rounded-xl bg-white shadow-sm">
         <div class="flex flex-col md:flex-row">
           <div class="flex w-full items-center p-8 md:w-1/2 md:p-10">
             <div>
-              <h2 class="text-terra-dark-blue mb-4 text-2xl font-bold md:text-3xl">
+              <h3 class="text-terra-dark-blue mb-4 text-2xl font-bold md:text-3xl">
                 Understanding Warming Stripes
-              </h2>
+              </h3>
               <p class="text-lg text-gray-700">
                 The warming stripes (a.k.a. climate stripes) represent our planet's rising
                 temperatures over time. Each colored stripe is one year - blue for cooler and red

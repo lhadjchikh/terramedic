@@ -2,7 +2,6 @@
   import ActionButton from '$lib/components/ActionButton.svelte';
   import NavBar from '$lib/components/NavBar.svelte';
   import Footer from '$lib/components/Footer.svelte';
-  import { Button } from 'flowbite-svelte';
 </script>
 
 <svelte:head>
@@ -51,7 +50,7 @@
           <ActionButton
             text="Visit the Yale Climate Solutions Hub"
             href="https://yaleclimateconnections.org/solutions/"
-            type="primary"
+            type="purple"
           />
         </div>
       </div>
@@ -128,13 +127,9 @@
 
       <div class="text-center">
         <p class="mb-4">When you're ready to take the next step:</p>
-        <div class="flex flex-col justify-center gap-4 sm:flex-row">
-          <Button href="/volunteer" color="blue" class="font-medium"
-            >Explore Volunteer Options</Button
-          >
-          <Button href="/donate" color="dark" outline class="font-medium"
-            >Consider Donation Options</Button
-          >
+        <div class="mx-auto flex max-w-2xl flex-col justify-center gap-4 sm:flex-row">
+          <ActionButton text="Explore Volunteer Options" href="/volunteer" type="primary" />
+          <ActionButton text="Consider Donation Options" href="/donate" type="secondary" />
         </div>
       </div>
     </div>

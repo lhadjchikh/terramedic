@@ -2,7 +2,6 @@
   import ActionButton from '$lib/components/ActionButton.svelte';
   import NavBar from '$lib/components/NavBar.svelte';
   import Footer from '$lib/components/Footer.svelte';
-  import WarmingStripes from '$lib/components/WarmingStripes.svelte';
   import { Button } from 'flowbite-svelte';
 </script>
 
@@ -14,49 +13,23 @@
   />
 </svelte:head>
 
-<<<<<<< Updated upstream:terramedic/src/routes/other-ways/+page.svelte
-<div class="flex min-h-screen flex-col">
-  <header class="bg-white shadow-sm">
-    <div class="container-narrow flex items-center justify-between py-4">
-      <a href="/" class="flex items-center">
-        <Logo size="small" />
-      </a>
-      <nav>
-        <ul class="flex space-x-6">
-          <li><a href="/" class="hover:text-terra-blue text-gray-600">Home</a></li>
-          <li><a href="/about" class="hover:text-terra-blue text-gray-600">About</a></li>
-          <li>
-            <a href="/volunteer" class="hover:text-terra-blue text-gray-600">Volunteer</a>
-          </li>
-          <li>
-            <a href="/donate" class="hover:text-terra-blue text-gray-600">Donate</a>
-          </li>
-          <li>
-            <a href="/other-actions" class="text-terra-blue font-medium">Other Ways</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-=======
 <div class="flex min-h-screen flex-col bg-gray-50">
   <NavBar />
->>>>>>> Stashed changes:terramedic/src/routes/other-actions/+page.svelte
 
   <main class="flex-grow">
-    <div class="container-narrow py-8">
-      <div class="mb-8">
-        <WarmingStripes />
-      </div>
-
-      <h1 class="page-title mb-2 text-center">Other Ways to Make a Difference</h1>
+    <div class="container-narrow py-12">
+      <h1 class="text-terra-dark-blue mb-4 text-center text-3xl font-bold md:text-4xl lg:text-5xl">
+        Other Ways to Make a Difference
+      </h1>
       <p class="mx-auto mb-10 max-w-2xl text-center text-lg text-gray-600">
         Even if you don't have spare time or money right now, there are still meaningful ways you
         can contribute to climate action.
       </p>
 
       <div class="mb-8 rounded-lg bg-white p-6 shadow-sm">
-        <h2 class="section-title">Yale Climate Connections Solutions Hub</h2>
+        <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">
+          Yale Climate Connections Solutions Hub
+        </h2>
         <p class="mb-4">
           The <a
             href="https://yaleclimateconnections.org/solutions/"
@@ -84,7 +57,9 @@
       </div>
 
       <div class="mb-8 rounded-lg bg-white p-6 shadow-sm">
-        <h2 class="section-title">Small Steps with Big Impact</h2>
+        <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">
+          Small Steps with Big Impact
+        </h2>
         <p class="mb-4">
           These actions require minimal time or financial investment but can still make a
           difference:
@@ -92,7 +67,9 @@
 
         <div class="mb-4 grid gap-4 md:grid-cols-2">
           <div class="rounded-lg bg-gray-50 p-4">
-            <h3 class="font-display mb-2 text-lg font-semibold">Start Conversations</h3>
+            <h3 class="mb-2 text-base font-semibold text-gray-800 md:text-lg">
+              Start Conversations
+            </h3>
             <p>
               Simply talking about climate change with friends, family, and colleagues helps
               normalize the topic and spread awareness. Sharing what you've learned about warming
@@ -101,7 +78,9 @@
           </div>
 
           <div class="rounded-lg bg-gray-50 p-4">
-            <h3 class="font-display mb-2 text-lg font-semibold">Make Climate-Conscious Choices</h3>
+            <h3 class="mb-2 text-base font-semibold text-gray-800 md:text-lg">
+              Make Climate-Conscious Choices
+            </h3>
             <p>
               When making everyday decisions about food, transportation, or purchases, consider the
               climate impact. Even small changes in routine can add up over time.
@@ -109,7 +88,7 @@
           </div>
 
           <div class="rounded-lg bg-gray-50 p-4">
-            <h3 class="font-display mb-2 text-lg font-semibold">Stay Informed</h3>
+            <h3 class="mb-2 text-base font-semibold text-gray-800 md:text-lg">Stay Informed</h3>
             <p>
               Follow reliable climate news sources and subscribe to newsletters. Being informed
               helps you make better decisions and identify opportunities to take action when your
@@ -118,7 +97,7 @@
           </div>
 
           <div class="rounded-lg bg-gray-50 p-4">
-            <h3 class="font-display mb-2 text-lg font-semibold">Use Your Voice</h3>
+            <h3 class="mb-2 text-base font-semibold text-gray-800 md:text-lg">Use Your Voice</h3>
             <p>
               Contact elected officials when key climate votes arise. A quick phone call or email
               can be completed in minutes but helps demonstrate public support for climate action.
@@ -128,7 +107,9 @@
       </div>
 
       <div class="mb-8 rounded-lg bg-white p-6 shadow-sm">
-        <h2 class="section-title">The Power of Community</h2>
+        <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">
+          The Power of Community
+        </h2>
         <p class="mb-4">
           Remember that addressing climate change is a collective effort. While individual actions
           matter, systemic changes driven by communities, businesses, and governments are essential
@@ -148,8 +129,12 @@
       <div class="text-center">
         <p class="mb-4">When you're ready to take the next step:</p>
         <div class="flex flex-col justify-center gap-4 sm:flex-row">
-          <Button href="/volunteer" color="blue" class="font-medium">Explore Volunteer Options</Button>
-          <Button href="/donate" color="dark" outline class="font-medium">Consider Donation Options</Button>
+          <Button href="/volunteer" color="blue" class="font-medium"
+            >Explore Volunteer Options</Button
+          >
+          <Button href="/donate" color="dark" outline class="font-medium"
+            >Consider Donation Options</Button
+          >
         </div>
       </div>
     </div>

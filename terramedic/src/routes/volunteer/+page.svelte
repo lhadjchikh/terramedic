@@ -3,7 +3,6 @@
   import OrganizationCard from '$lib/components/OrganizationCard.svelte';
   import NavBar from '$lib/components/NavBar.svelte';
   import Footer from '$lib/components/Footer.svelte';
-  import WarmingStripes from '$lib/components/WarmingStripes.svelte';
 </script>
 
 <svelte:head>
@@ -18,12 +17,10 @@
   <NavBar />
 
   <main class="flex-grow">
-    <div class="container-narrow py-8">
-      <div class="mb-8">
-        <WarmingStripes />
-      </div>
-
-      <h1 class="page-title mb-2 text-center">Volunteer Your Time</h1>
+    <div class="container-narrow py-12">
+      <h1 class="text-terra-dark-blue mb-4 text-center text-3xl font-bold md:text-4xl lg:text-5xl">
+        Volunteer Your Time
+      </h1>
       <p class="mx-auto mb-10 max-w-2xl text-center text-lg text-gray-600">
         These organizations are making a real impact on climate change and need people like you.
         Your time and skills can help build a sustainable future.
@@ -43,7 +40,9 @@
       </div>
 
       <div class="mt-12 rounded-lg bg-white p-6 shadow-sm">
-        <h2 class="section-title mb-4 text-center">Why Volunteer for Climate Action?</h2>
+        <h2 class="text-terra-dark-blue mb-4 text-center text-xl font-bold md:text-2xl">
+          Why Volunteer for Climate Action?
+        </h2>
         <p class="mb-3">
           Volunteering your time to climate organizations is one of the most effective ways to
           create change. When you volunteer, you:

@@ -1,7 +1,6 @@
 <script>
   import NavBar from '$lib/components/NavBar.svelte';
   import Footer from '$lib/components/Footer.svelte';
-  import WarmingStripes from '$lib/components/WarmingStripes.svelte';
   import OrganizationCard from '$lib/components/OrganizationCard.svelte';
   import { resourceOrgs } from '$lib/data/resource-orgs.js';
 </script>
@@ -18,12 +17,10 @@
   <NavBar />
 
   <main class="flex-grow">
-    <div class="container-narrow py-8">
-      <div class="mb-8">
-        <WarmingStripes />
-      </div>
-
-      <h1 class="page-title mb-2 text-center">Resources for Climate Advocates</h1>
+    <div class="container-narrow py-12">
+      <h1 class="text-terra-dark-blue mb-4 text-center text-3xl font-bold md:text-4xl lg:text-5xl">
+        Resources for Climate Advocates
+      </h1>
       <p class="mx-auto mb-10 max-w-2xl text-center text-lg text-gray-600">
         Tools, research, and support for those already engaged in climate advocacy work.
       </p>

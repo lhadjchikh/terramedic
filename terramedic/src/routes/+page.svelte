@@ -51,7 +51,7 @@
 
       <!-- Subtle divider -->
       <div
-        class="absolute bottom-0 left-0 right-0 z-20 h-6 bg-gradient-to-b from-transparent to-gray-50"
+        class="absolute right-0 bottom-0 left-0 z-20 h-6 bg-gradient-to-b from-transparent to-gray-50"
       ></div>
     </section>
 
@@ -102,7 +102,7 @@
                 />
                 <!-- Zoom indicator overlay -->
                 <div
-                  class="absolute bottom-2 right-2 flex h-8 w-8 items-center justify-center rounded-full bg-black/60 text-white"
+                  class="absolute right-2 bottom-2 flex h-8 w-8 items-center justify-center rounded-full bg-black/60 text-white"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -127,7 +127,7 @@
       </div>
 
       <!-- Take Action Section -->
-      <div id="take-action" class="mb-16 mt-16 scroll-mt-20 pt-4">
+      <div id="take-action" class="mt-16 mb-16 scroll-mt-20 pt-4">
         <div class="mb-12 text-center">
           <h2 class="text-terra-dark-blue mb-4 text-2xl font-bold md:text-3xl">
             Choose Your Path to Climate Action
@@ -160,24 +160,48 @@
     <!-- About Project Section with Background -->
     <section class="from-terra-blue/10 to-terra-green/10 bg-gradient-to-br py-16">
       <div class="container-narrow">
-        <Card class="border-0 bg-white shadow-lg" color="none">
-          <div class="px-2 py-4 md:p-8">
-            <h2 class="text-terra-dark-blue mb-6 text-center text-2xl font-bold md:text-3xl">
-              About This Project
-            </h2>
-            <p class="mb-6 text-lg text-gray-700">
-              This website was created to accompany the warming stripes buttons distributed at
-              climate outreach events. Our goal is to help people understand what the warming
-              stripes represent and guide them toward meaningful climate action.
-            </p>
-            <div class="mt-8 text-center">
-              <Button href="/about" color="blue" class="px-6">
-                <span>Learn more about warming stripes</span>
-                <ArrowRightOutline class="ml-1 h-4 w-4" />
-              </Button>
+        <!-- Match width with other panels -->
+        <div class="overflow-hidden rounded-xl bg-white shadow-sm">
+          <div class="flex flex-col md:flex-row">
+            <!-- Button image on the left -->
+            <div class="flex w-full items-center justify-center bg-gray-50 p-8 md:w-1/3 md:p-10">
+              <div
+                class="relative max-w-[220px] overflow-hidden rounded-lg shadow-md transition-transform hover:scale-105"
+              >
+                <img
+                  src="/images/warming-stripes-button.png"
+                  alt="Climate warming stripes button"
+                  class="h-auto w-full"
+                />
+                <div class="absolute inset-0 rounded-lg ring-1 ring-gray-300/30"></div>
+              </div>
+            </div>
+
+            <!-- Text content on the right -->
+            <div class="flex w-full items-center p-8 md:w-2/3 md:p-10">
+              <div>
+                <h3 class="text-terra-dark-blue mb-4 text-2xl font-bold md:text-3xl">
+                  About This Project
+                </h3>
+                <p class="mb-4 text-lg text-gray-700">
+                  This website was created to accompany the warming stripes buttons (shown left)
+                  distributed at climate outreach events.
+                </p>
+                <p class="mb-6 text-lg text-gray-700">
+                  Our goal is to help people understand what the warming stripes represent and
+                  provide clear, actionable ways to get involved in climate solutions, whether
+                  through volunteering, donations, or other forms of climate advocacy.
+                </p>
+                <div class="mt-6">
+                  <Button href="/about" color="blue" class="font-medium">
+                    <span>Learn more about warming stripes</span>
+                    <ArrowRightOutline class="ml-1 h-4 w-4" />
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
-        </Card>
+        </div>
       </div>
     </section>
   </main>

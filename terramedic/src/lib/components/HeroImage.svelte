@@ -1,4 +1,6 @@
 <script>
+  import { onMount } from 'svelte';
+  
   export let src = '/images/hero.svg';
   export let alt = 'Hero Image';
   export let title = '';
@@ -12,6 +14,27 @@
       : size === 'medium'
         ? 'h-[24rem] md:h-[32rem] lg:h-[40rem]'
         : 'h-[32rem] md:h-[40rem] lg:h-[48rem]';
+        
+  // Add smooth scrolling for anchor links
+  onMount(() => {
+    const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+    
+    smoothScrollLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80, // Offset for navbar height
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  });
 </script>
 
 <div class="hero-section relative w-full overflow-hidden">
@@ -46,10 +69,10 @@
             {/if}
             
             <div class="mt-8">
-              <a href="/volunteer" class="inline-flex items-center rounded-md bg-blue-600 px-5 py-3 text-base font-medium text-white shadow-md hover:bg-blue-700 transition-colors">
+              <a href="#take-action" class="inline-flex items-center rounded-md bg-blue-600 px-5 py-3 text-base font-medium text-white shadow-md hover:bg-blue-700 transition-colors">
                 Take Action Now
                 <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  <path fill-rule="evenodd" d="M16.707 10.293a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l4.293-4.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                 </svg>
               </a>
             </div>

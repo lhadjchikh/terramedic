@@ -79,7 +79,7 @@
       </div>
 
       <!-- Take Action Section -->
-      <div class="mb-16 mt-16">
+      <div id="take-action" class="mb-16 mt-16 pt-4 scroll-mt-20">
         <div class="mb-12 text-center">
           <h2 class="text-terra-dark-blue mb-4 text-2xl font-bold md:text-3xl">
             Choose Your Path to Climate Action

@@ -24,19 +24,15 @@
     <!-- Hero Section -->
     <section class="relative">
       <HeroImage
-        src="/images/2025GenerationsStripes.jpg"
+        src="/images/hero.svg"
         alt="Anyone can become a terramedic"
         size="large"
         title="Transform awareness into action"
         description="The warming stripes you see represent our planet's rising temperatures over time. Each colored stripe is one year - blue for cooler and red for warmer than average. The clear shift from blue to red tells the story of our warming planet."
       />
 
-      <!-- Curved divider -->
-      <div class="absolute bottom-0 left-0 right-0 h-16 overflow-hidden">
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="h-full w-full">
-          <path d="M0,150 C150,50 350,50 500,150 L500,00 L0,0 Z" class="fill-gray-50"></path>
-        </svg>
-      </div>
+      <!-- Subtle divider -->
+      <div class="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-b from-transparent to-gray-50 z-20"></div>
     </section>
 
     <!-- Main Content Section -->

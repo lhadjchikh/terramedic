@@ -1,4 +1,3 @@
-import tailwindcss from '@tailwindcss/vite';
 import { svelteTesting } from '@testing-library/svelte/vite';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
@@ -15,7 +14,10 @@ export default defineConfig({
       $lib: '/src/lib'
     }
   },
-  plugins: [tailwindcss(), sveltekit()],
+  plugins: [sveltekit()],
+  css: {
+    postcss: true // Ensure PostCSS is used
+  },
   test: {
     workspace: [
       {

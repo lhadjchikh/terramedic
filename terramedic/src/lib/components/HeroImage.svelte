@@ -2,7 +2,7 @@
   import { onMount } from 'svelte';
 
   export let src = '/images/hero.svg';
-  export let alt = 'Hero Image';
+  export let alt = 'Anyone can become a terramedic';
   export let title = '';
   export let description = '';
   export let size = 'medium'; // small, medium, large
@@ -75,7 +75,7 @@
                   href="#take-action"
                   class="inline-flex items-center rounded-md bg-blue-600 px-5 py-3 text-base font-medium text-white shadow-md transition-colors hover:bg-blue-700"
                 >
-                  Take Action Now
+                  Become a Terramedic
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="ml-2 h-5 w-5"

@@ -45,13 +45,13 @@
         src="/images/hero.svg"
         alt="Anyone can become a terramedic"
         size="large"
-        title="Transform awareness into action"
-        description="The warming stripes you see represent our planet's rising temperatures over time. Each colored stripe is one year - blue for cooler and red for warmer than average. The clear shift from blue to red tells the story of our warming planet."
+        title="Turn awareness into action"
+        description="The warming stripes visually tell the story of our planet's rising temperatures. Move beyond awareness and join our community of climate advocates helping to heal our planet and preserve our world for future generations."
       />
 
       <!-- Subtle divider -->
       <div
-        class="absolute right-0 bottom-0 left-0 z-20 h-6 bg-gradient-to-b from-transparent to-gray-50"
+        class="absolute bottom-0 left-0 right-0 z-20 h-6 bg-gradient-to-b from-transparent to-gray-50"
       ></div>
     </section>
 
@@ -102,7 +102,7 @@
                 />
                 <!-- Zoom indicator overlay -->
                 <div
-                  class="absolute right-2 bottom-2 flex h-8 w-8 items-center justify-center rounded-full bg-black/60 text-white"
+                  class="absolute bottom-2 right-2 flex h-8 w-8 items-center justify-center rounded-full bg-black/60 text-white"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -127,14 +127,15 @@
       </div>
 
       <!-- Take Action Section -->
-      <div id="take-action" class="mt-16 mb-16 scroll-mt-20 pt-4">
+      <div id="take-action" class="mb-16 mt-16 scroll-mt-20 pt-4">
         <div class="mb-12 text-center">
           <h2 class="text-terra-dark-blue mb-4 text-2xl font-bold md:text-3xl">
             Choose Your Path to Climate Action
           </h2>
           <p class="mx-auto max-w-2xl text-lg text-gray-700">
             Join us in taking action. Whether you have time or money to contribute—or neither!—you
-            can make a difference in addressing climate change.
+            can make a difference in addressing climate change and healing our planet. Become a
+            terramedic!
           </p>
         </div>
 

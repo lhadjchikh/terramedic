@@ -21,6 +21,7 @@ To view a copy of this license, visit https://creativecommons.org/licenses/by/4.
 This project includes content from third-party organizations licensed under CC BY 4.0. Below is a list of such content and their respective attributions:
 
 1. **"Born in a Warming World" graphic**:
+
    - Source: [Climate Central](https://www.climatecentral.org/)
    - License: Creative Commons Attribution 4.0 International (CC BY 4.0)
 
@@ -30,7 +31,7 @@ This project includes content from third-party organizations licensed under CC B
 
 When using or sharing non-code content from this project, please include the following attribution:
 
-> "Content from terramedic.org, including third-party contributions, licensed under CC BY 4.0. Created by the Terramedic Action Team and contributors."
+> "Content from terramedic.org, including third-party contributions, licensed under CC BY 4.0. Created by the Terramedic Corps and contributors."
 
 ---
 

@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-  <title>Other Ways to Help | Terramedic Action Team</title>
+  <title>Other Ways to Help | Terramedic</title>
   <meta
     name="description"
     content="Learn about other ways to address climate change even without spare time or money."
@@ -30,7 +30,7 @@
             <a href="/donate" class="hover:text-terra-blue text-gray-600">Donate</a>
           </li>
           <li>
-            <a href="/other-ways" class="text-terra-blue font-medium">Other Ways</a>
+            <a href="/other-actions" class="text-terra-blue font-medium">Other Ways</a>
           </li>
         </ul>
       </nav>

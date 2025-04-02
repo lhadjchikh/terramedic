@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+import flowbitePlugin from 'flowbite/plugin';
+import aspectRatioPlugin from '@tailwindcss/aspect-ratio';
+
 export default {
   content: [
     './src/**/*.{html,js,svelte,ts}',
@@ -15,10 +18,11 @@ export default {
       },
       fontFamily: {
         sans: ['Open Sans', 'sans-serif'],
-        display: ['Montserrat', 'sans-serif']
+        serif: ['Merriweather', 'serif'],
+        mono: ['Courier New', 'monospace']
       }
     }
   },
-  plugins: [require('flowbite/plugin'), require('@tailwindcss/aspect-ratio')],
-  darkMode: 'class'
+  plugins: [flowbitePlugin, aspectRatioPlugin],
+  darkMode: false // Completely disable dark mode
 };

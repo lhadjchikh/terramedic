@@ -25,7 +25,7 @@
         Tools, research, and support for those already engaged in climate advocacy work.
       </p>
 
-      <div class="mb-12 grid gap-8 md:grid-cols-2">
+      <div class="mx-auto mb-12 grid max-w-4xl gap-8 px-4 sm:px-6 md:grid-cols-2">
         {#each resourceOrgs as org}
           <OrganizationCard
             name={org.name}

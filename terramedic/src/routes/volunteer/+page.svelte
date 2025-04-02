@@ -26,7 +26,7 @@
         Your time and skills can help build a sustainable future.
       </p>
 
-      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div class="mx-auto grid max-w-5xl gap-6 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-3">
         {#each volunteerOrganizations as org}
           <OrganizationCard
             name={org.name}

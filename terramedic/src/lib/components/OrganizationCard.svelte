@@ -1,5 +1,6 @@
 <script>
   import { Card, Badge, Button } from 'flowbite-svelte';
+  import { trackEvent } from '$lib/utils/analytics';
 
   export let name = '';
   export let description = '';
@@ -22,6 +23,16 @@
 
   // Default to blue if no valid color is provided
   $: tagStyle = tagColorMap[tagColor] || tagColorMap.blue;
+
+  // Handle button click for analytics tracking
+  function handleButtonClick() {
+    trackEvent('organization_click', {
+      organization_name: name,
+      organization_url: websiteUrl,
+      button_text: actionText,
+      categories: tags.join(',')
+    });
+  }
 </script>
 
 <Card
@@ -51,6 +62,7 @@
       target="_blank"
       rel="noopener noreferrer"
       class="w-full shadow-sm transition-all duration-200 hover:shadow"
+      on:click={handleButtonClick}
     >
       {actionText}
     </Button>

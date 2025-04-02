@@ -14,11 +14,19 @@
   let modalImage = '/images/2025GenerationsStripes.jpg';
   let modalAlt = '2025 Generations Stripes';
 
+  import { trackEvent } from '$lib/utils/analytics';
+
   // Function to open modal
   function openModal(src, alt) {
     modalImage = src;
     modalAlt = alt;
     showModal = true;
+
+    // Track modal open event
+    trackEvent('image_view', {
+      image_src: src,
+      image_alt: alt
+    });
   }
 
   // Function to close modal

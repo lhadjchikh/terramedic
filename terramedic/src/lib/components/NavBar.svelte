@@ -1,8 +1,16 @@
 <script>
   import Logo from './Logo.svelte';
+  import {
+    Navbar,
+    NavBrand,
+    NavLi,
+    NavUl,
+    NavHamburger,
+    Dropdown,
+    DropdownItem
+  } from 'flowbite-svelte';
 
   let activeUrl = '';
-  let isMenuOpen = false;
 
   // Get current path
   if (typeof window !== 'undefined') {
@@ -17,86 +25,46 @@
 
 <div class="sticky top-0 z-50">
   <div class="navbar-background relative overflow-hidden shadow-md">
-    <!-- Main navigation with center blur and clear edges -->
-    <div class="relative">
-      <!-- Center blur only - edges stay clear -->
-      <div
-        class="blur-container pointer-events-none absolute top-0 bottom-0 left-1/2 -translate-x-1/2"
-      ></div>
+    <!-- Center blur overlay - edges stay clear -->
+    <div
+      class="blur-container pointer-events-none absolute bottom-0 left-1/2 top-0 -translate-x-1/2"
+    ></div>
 
-      <div class="container-narrow relative z-10">
-        <div class="flex items-center justify-between py-3">
-          <!-- Logo -->
-          <div class="flex-shrink-0">
-            <a href="/" class="flex items-center">
-              <div class="rounded-md bg-white p-1">
-                <Logo size="small" />
-              </div>
-            </a>
+    <div class="container-narrow relative z-10">
+      <Navbar let:hidden let:toggle navClass="px-0 py-2 my-0 bg-transparent !border-0">
+        <NavBrand href="/">
+          <div class="rounded-md bg-white p-1">
+            <Logo size="small" />
           </div>
+        </NavBrand>
 
-          <!-- Center Nav Items -->
-          <div class="hidden flex-grow justify-center lg:flex">
-            <ul class="flex items-center space-x-4 lg:space-x-6">
-              <li><a href="/" class="nav-link {activeUrl === '/' ? 'active' : ''}">Home</a></li>
-              <li>
-                <a href="/about" class="nav-link {activeUrl === '/about' ? 'active' : ''}">About</a>
-              </li>
-              <li>
-                <a href="/volunteer" class="nav-link {activeUrl === '/volunteer' ? 'active' : ''}"
-                  >Volunteer</a
-                >
-              </li>
-              <li>
-                <a href="/donate" class="nav-link {activeUrl === '/donate' ? 'active' : ''}"
-                  >Donate</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/other-actions"
-                  class="nav-link {activeUrl === '/other-actions' ? 'active' : ''}">Other Actions</a
-                >
-              </li>
-              <li>
-                <a href="/resources" class="nav-link {activeUrl === '/resources' ? 'active' : ''}"
-                  >Resources</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
+        <NavHamburger on:click={toggle} class="text-white focus:ring-0" />
 
-        <!-- Mobile menu (toggleable) -->
-        <div
-          class="lg:hidden {isMenuOpen
-            ? 'block'
-            : 'hidden'} bg-terra-dark-blue/95 absolute right-0 left-0 z-20 shadow-lg"
+        <NavUl
+          {hidden}
+          ulClass="flex flex-col p-4 mt-4 bg-[#1a2a38]/95 border border-slate-700/30 rounded-lg md:flex-row md:space-x-4 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent"
+          divClass="w-full md:block md:w-auto mt-0"
         >
-          <div class="space-y-1 pt-2 pb-3">
-            <a href="/" class="nav-link-mobile {activeUrl === '/' ? 'active' : ''}">Home</a>
-            <a href="/about" class="nav-link-mobile {activeUrl === '/about' ? 'active' : ''}"
-              >About</a
-            >
-            <a
-              href="/volunteer"
-              class="nav-link-mobile {activeUrl === '/volunteer' ? 'active' : ''}">Volunteer</a
-            >
-            <a href="/donate" class="nav-link-mobile {activeUrl === '/donate' ? 'active' : ''}"
-              >Donate</a
-            >
-            <a
-              href="/other-actions"
-              class="nav-link-mobile {activeUrl === '/other-actions' ? 'active' : ''}"
-              >Other Actions</a
-            >
-            <a
-              href="/resources"
-              class="nav-link-mobile {activeUrl === '/resources' ? 'active' : ''}">Resources</a
-            >
-          </div>
-        </div>
-      </div>
+          <NavLi href="/" active={activeUrl === '/'} class="nav-item">
+            <span class="nav-link">Home</span>
+          </NavLi>
+          <NavLi href="/about" active={activeUrl === '/about'} class="nav-item">
+            <span class="nav-link">About</span>
+          </NavLi>
+          <NavLi href="/volunteer" active={activeUrl === '/volunteer'} class="nav-item">
+            <span class="nav-link">Volunteer</span>
+          </NavLi>
+          <NavLi href="/donate" active={activeUrl === '/donate'} class="nav-item">
+            <span class="nav-link">Donate</span>
+          </NavLi>
+          <NavLi href="/other-actions" active={activeUrl === '/other-actions'} class="nav-item">
+            <span class="nav-link">Other Actions</span>
+          </NavLi>
+          <NavLi href="/resources" active={activeUrl === '/resources'} class="nav-item">
+            <span class="nav-link">Resources</span>
+          </NavLi>
+        </NavUl>
+      </Navbar>
     </div>
   </div>
 </div>
@@ -109,8 +77,12 @@
     z-index: 5;
   }
 
-  /* Navigation links styling */
-  .nav-link {
+  /* Override Flowbite styles */
+  :global(.navbar-background .nav-item) {
+    width: 100%;
+  }
+
+  :global(.navbar-background .nav-link) {
     color: white;
     font-weight: 600;
     font-size: 0.95rem;
@@ -119,32 +91,35 @@
     border-radius: 0.25rem;
     transition: all 0.2s ease;
     white-space: nowrap;
+    display: block;
+    width: 100%;
   }
 
-  .nav-link:hover {
+  :global(.navbar-background .nav-item:hover .nav-link) {
     background-color: rgba(255, 255, 255, 0.1);
-    transform: translateY(-1px);
   }
 
-  .nav-link.active {
+  :global(.navbar-background .nav-item.active .nav-link) {
     text-decoration: underline;
     text-underline-offset: 4px;
     font-weight: 700;
-  }
-
-  /* Mobile menu link styling */
-  .nav-link-mobile {
-    display: block;
-    padding: 0.75rem 1rem;
-    font-size: 1rem;
-    font-weight: 600;
-    color: white;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-  }
-
-  .nav-link-mobile.active {
     background-color: rgba(255, 255, 255, 0.1);
-    font-weight: 700;
+  }
+
+  /* Media query for mobile menu items */
+  @media (max-width: 768px) {
+    :global(.navbar-background .nav-item) {
+      padding: 0.25rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    :global(.navbar-background .nav-item:last-child) {
+      border-bottom: none;
+    }
+
+    :global(.navbar-background .nav-link) {
+      padding: 0.75rem 1rem;
+    }
   }
 
   /* Background image for the navbar */
@@ -153,5 +128,12 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  /* Override Flowbite navbar background */
+  :global(.navbar-background nav) {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
   }
 </style>

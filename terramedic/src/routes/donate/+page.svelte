@@ -1,7 +1,7 @@
 <script>
   import { donationOrganizations } from '$lib/data/donation-orgs.js';
   import OrganizationCard from '$lib/components/OrganizationCard.svelte';
-  import Logo from '$lib/components/Logo.svelte';
+  import NavBar from '$lib/components/NavBar.svelte';
   import Footer from '$lib/components/Footer.svelte';
   import WarmingStripes from '$lib/components/WarmingStripes.svelte';
 </script>
@@ -14,24 +14,8 @@
   />
 </svelte:head>
 
-<div class="flex min-h-screen flex-col">
-  <header class="bg-white shadow-sm">
-    <div class="container-narrow flex items-center justify-between py-4">
-      <a href="/" class="flex items-center">
-        <Logo size="small" />
-      </a>
-      <nav>
-        <ul class="flex space-x-6">
-          <li><a href="/" class="hover:text-terra-blue text-gray-600">Home</a></li>
-          <li><a href="/about" class="hover:text-terra-blue text-gray-600">About</a></li>
-          <li>
-            <a href="/volunteer" class="hover:text-terra-blue text-gray-600">Volunteer</a>
-          </li>
-          <li><a href="/donate" class="text-terra-blue font-medium">Donate</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<div class="flex min-h-screen flex-col bg-gray-50">
+  <NavBar />
 
   <main class="flex-grow">
     <div class="container-narrow py-8">

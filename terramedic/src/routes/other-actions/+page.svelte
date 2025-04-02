@@ -1,8 +1,9 @@
 <script>
   import ActionButton from '$lib/components/ActionButton.svelte';
-  import Logo from '$lib/components/Logo.svelte';
+  import NavBar from '$lib/components/NavBar.svelte';
   import Footer from '$lib/components/Footer.svelte';
   import WarmingStripes from '$lib/components/WarmingStripes.svelte';
+  import { Button } from 'flowbite-svelte';
 </script>
 
 <svelte:head>
@@ -13,6 +14,7 @@
   />
 </svelte:head>
 
+<<<<<<< Updated upstream:terramedic/src/routes/other-ways/+page.svelte
 <div class="flex min-h-screen flex-col">
   <header class="bg-white shadow-sm">
     <div class="container-narrow flex items-center justify-between py-4">
@@ -36,6 +38,10 @@
       </nav>
     </div>
   </header>
+=======
+<div class="flex min-h-screen flex-col bg-gray-50">
+  <NavBar />
+>>>>>>> Stashed changes:terramedic/src/routes/other-actions/+page.svelte
 
   <main class="flex-grow">
     <div class="container-narrow py-8">
@@ -142,8 +148,8 @@
       <div class="text-center">
         <p class="mb-4">When you're ready to take the next step:</p>
         <div class="flex flex-col justify-center gap-4 sm:flex-row">
-          <a href="/volunteer" class="btn btn-primary">Explore Volunteer Options</a>
-          <a href="/donate" class="btn btn-secondary">Consider Donation Options</a>
+          <Button href="/volunteer" color="blue" class="font-medium">Explore Volunteer Options</Button>
+          <Button href="/donate" color="dark" outline class="font-medium">Consider Donation Options</Button>
         </div>
       </div>
     </div>

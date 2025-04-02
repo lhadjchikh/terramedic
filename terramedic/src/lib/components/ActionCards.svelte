@@ -80,14 +80,16 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 100%;
+    width: calc(100% - 2rem); /* Improve mobile padding */
     max-width: 350px;
     margin: 0 auto;
+    padding: 0 1rem; /* Ensure consistent side padding */
   }
 
   .card-link {
     text-decoration: none;
     width: 100%;
+    display: block; /* Ensure full width */
   }
 
   .card {
@@ -102,6 +104,8 @@
       0 4px 6px -1px rgba(0, 0, 0, 0.1),
       0 2px 4px -1px rgba(0, 0, 0, 0.06);
     height: 100%;
+    min-height: 80px; /* Ensure consistent height on mobile */
+    width: 100%; /* Ensure cards take full width */
   }
 
   .purple {
@@ -141,10 +145,16 @@
   }
 
   .tip {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 700;
     margin: 0;
     line-height: 1.4;
+  }
+
+  @media (min-width: 768px) {
+    .tip {
+      font-size: 1.125rem;
+    }
   }
 
   .second-text {

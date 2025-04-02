@@ -1,11 +1,16 @@
 <script>
   import '../app.css';
-  import { DarkMode } from 'flowbite-svelte';
+  import { onMount } from 'svelte';
+  
+  // Force light mode and remove any dark mode settings
+  onMount(() => {
+    if (typeof window !== 'undefined') {
+      // Remove dark class from the document element
+      document.documentElement.classList.remove('dark');
+      // Remove any stored theme preference
+      localStorage.removeItem('color-theme');
+    }
+  });
 </script>
 
 <slot />
-
-<!-- Optional: Add a floating theme toggle button -->
-<div class="fixed right-4 bottom-4">
-  <DarkMode />
-</div>

@@ -32,7 +32,7 @@
       />
 
       <!-- Curved divider -->
-      <div class="absolute right-0 bottom-0 left-0 h-16 overflow-hidden">
+      <div class="absolute bottom-0 left-0 right-0 h-16 overflow-hidden">
         <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="h-full w-full">
           <path d="M0,150 C150,50 350,50 500,150 L500,00 L0,0 Z" class="fill-gray-50"></path>
         </svg>
@@ -41,9 +41,7 @@
 
     <!-- Main Content Section -->
     <section class="section container-narrow">
-      <Heading tag="h1" class="section-title text-terra-dark-blue">
-        Climate Crisis: Our Shared Challenge
-      </Heading>
+      <h1 class="section-title text-terra-dark-blue">Climate Crisis: Our Shared Challenge</h1>
 
       <!-- Understanding Warming Stripes Section -->
       <div class="mt-16 overflow-hidden rounded-xl bg-white shadow-sm">
@@ -85,7 +83,7 @@
       </div>
 
       <!-- Take Action Section -->
-      <div class="mt-16 mb-16">
+      <div class="mb-16 mt-16">
         <div class="mb-12 text-center">
           <h2 class="text-terra-dark-blue mb-4 text-2xl font-bold md:text-3xl">
             Choose Your Path to Climate Action
@@ -117,13 +115,11 @@
     <!-- About Project Section with Background -->
     <section class="from-terra-blue/10 to-terra-green/10 bg-gradient-to-br py-16">
       <div class="container-narrow">
-        <Card class="border-0 bg-white shadow-lg">
+        <Card class="border-0 bg-white shadow-lg" color="none">
           <div class="px-2 py-4 md:p-8">
-            <Heading
-              tag="h2"
-              class="text-terra-dark-blue mb-6 text-center text-2xl font-bold md:text-3xl"
-              >About This Project</Heading
-            >
+            <h2 class="text-terra-dark-blue mb-6 text-center text-2xl font-bold md:text-3xl">
+              About This Project
+            </h2>
             <p class="mb-6 text-lg text-gray-700">
               This website was created to accompany the warming stripes buttons distributed at
               climate outreach events. Our goal is to help people understand what the warming

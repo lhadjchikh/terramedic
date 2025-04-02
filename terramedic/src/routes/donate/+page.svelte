@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-  <title>Donate to Climate Organizations | Terramedic Action Team</title>
+  <title>Donate to Climate Organizations | Terramedic Corps</title>
   <meta
     name="description"
     content="Support organizations fighting climate change through donations and make a financial impact."

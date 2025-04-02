@@ -1,4 +1,4 @@
-<footer class="bg-terra-dark-blue mt-16 pt-12 pb-8 text-white">
+<footer class="bg-terra-dark-blue mt-16 pb-8 pt-12 text-white">
   <!-- Top warming stripes accent bar -->
   <div class="mb-8 h-1.5 w-full bg-gradient-to-r from-blue-500 via-yellow-400 to-red-600"></div>
 
@@ -74,7 +74,7 @@
       <div class="md:col-span-2">
         <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
           <div>
-            <h3 class="mb-3 text-sm font-semibold tracking-wider text-gray-200 uppercase">
+            <h3 class="mb-3 text-sm font-semibold uppercase tracking-wider text-gray-200">
               Navigation
             </h3>
             <ul class="space-y-2">
@@ -107,7 +107,7 @@
           </div>
 
           <div>
-            <h3 class="mb-3 text-sm font-semibold tracking-wider text-gray-200 uppercase">
+            <h3 class="mb-3 text-sm font-semibold uppercase tracking-wider text-gray-200">
               Resources
             </h3>
             <ul class="space-y-2">
@@ -187,7 +187,7 @@
           </div>
 
           <div>
-            <h3 class="mb-3 text-sm font-semibold tracking-wider text-gray-200 uppercase">
+            <h3 class="mb-3 text-sm font-semibold uppercase tracking-wider text-gray-200">
               Contact
             </h3>
             <ul class="space-y-2">
@@ -198,7 +198,7 @@
                   <input
                     type="email"
                     placeholder="Your email"
-                    class="focus:ring-terra-blue w-full rounded-l-md px-2 py-1 text-sm text-gray-800 focus:ring-1 focus:outline-none"
+                    class="focus:ring-terra-blue w-full rounded-l-md px-2 py-1 text-sm text-gray-800 focus:outline-none focus:ring-1"
                   />
                   <button
                     type="submit"
@@ -217,7 +217,7 @@
     <div class="mt-12 border-t border-gray-700 pt-6">
       <div class="flex flex-col items-center justify-between md:flex-row">
         <p class="text-sm text-gray-400">
-          © {new Date().getFullYear()} Terramedic Action Team. Created for climate activism.
+          © {new Date().getFullYear()} Terramedic Corps. Created for climate activism.
         </p>
         <p class="mt-2 text-sm text-gray-400 md:mt-0">
           Data sourced from Show Your Stripes and climate science organizations.

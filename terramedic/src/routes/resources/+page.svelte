@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-  <title>Climate Advocate Resources | Terramedic Action Team</title>
+  <title>Climate Advocate Resources | Terramedic Corps</title>
   <meta
     name="description"
     content="Resources for climate advocates including research tools, communication strategies, and advocacy support."

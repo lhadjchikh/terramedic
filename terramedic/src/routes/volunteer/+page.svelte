@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-  <title>Volunteer Opportunities | Terramedic Action Team</title>
+  <title>Volunteer Opportunities | Terramedic Corps</title>
   <meta
     name="description"
     content="Find opportunities to volunteer your time and skills to organizations fighting climate change."

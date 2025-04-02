@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-  <title>Other Ways to Help | Terramedic Action Team</title>
+  <title>Other Ways to Help | Terramedic Corps</title>
   <meta
     name="description"
     content="Learn about other ways to address climate change even without spare time or money."

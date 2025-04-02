@@ -1,22 +1,19 @@
-<footer class="bg-terra-dark-blue mt-16 pb-8 pt-12 text-white">
+<footer class="bg-terra-dark-blue mt-16 pb-8 pt-12 text-gray-800">
   <!-- Top warming stripes accent bar -->
   <div class="mb-8 h-1.5 w-full bg-gradient-to-r from-blue-500 via-yellow-400 to-red-600"></div>
 
   <div class="container-narrow">
     <div class="grid grid-cols-1 gap-8 md:grid-cols-3 lg:gap-12">
       <div class="md:col-span-1">
-        <div class="font-display mb-2 text-2xl font-bold">
-          <span class="text-terra-green">Terra</span>
-          <span class="text-terra-blue">medic</span>
-        </div>
-        <p class="mb-4 max-w-md text-gray-300">
+        <div class="text-terra-blue-dark mb-2 text-2xl font-bold">Terramedic Corps</div>
+        <p class="mb-4 max-w-md text-gray-600">
           Climate action starts with you. Join our community of change-makers dedicated to
           addressing the climate crisis.
         </p>
 
         <!-- Social Media Icons -->
         <div class="mt-4 flex space-x-4">
-          <a href="#" class="text-gray-400 transition-colors hover:text-white">
+          <a href="#" class="text-gray-800 transition-colors hover:text-gray-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -29,7 +26,7 @@
               />
             </svg>
           </a>
-          <a href="#" class="text-gray-400 transition-colors hover:text-white">
+          <a href="#" class="text-gray-800 transition-colors hover:text-gray-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -42,7 +39,7 @@
               />
             </svg>
           </a>
-          <a href="#" class="text-gray-400 transition-colors hover:text-white">
+          <a href="#" class="text-gray-800 transition-colors hover:text-gray-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -55,7 +52,7 @@
               />
             </svg>
           </a>
-          <a href="#" class="text-gray-400 transition-colors hover:text-white">
+          <a href="#" class="text-gray-800 transition-colors hover:text-gray-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -74,32 +71,35 @@
       <div class="md:col-span-2">
         <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
           <div>
-            <h3 class="mb-3 text-sm font-semibold uppercase tracking-wider text-gray-200">
+            <h3 class="mb-3 text-sm font-semibold uppercase tracking-wider text-gray-400">
               Navigation
             </h3>
             <ul class="space-y-2">
-              <li><a href="/" class="text-gray-300 transition-colors hover:text-white">Home</a></li>
               <li>
-                <a href="/about" class="text-gray-300 transition-colors hover:text-white"
+                <a href="/" class="text-gray-600 transition-colors hover:text-gray-800">Home</a>
+              </li>
+              <li>
+                <a href="/about" class="text-gray-600 transition-colors hover:text-gray-800"
                   >About Warming Stripes</a
                 >
               </li>
               <li>
-                <a href="/volunteer" class="text-gray-300 transition-colors hover:text-white"
+                <a href="/volunteer" class="text-gray-600 transition-colors hover:text-gray-800"
                   >Volunteer</a
                 >
               </li>
               <li>
-                <a href="/donate" class="text-gray-300 transition-colors hover:text-white">Donate</a
+                <a href="/donate" class="text-gray-600 transition-colors hover:text-gray-800"
+                  >Donate</a
                 >
               </li>
               <li>
-                <a href="/other-actions" class="text-gray-300 transition-colors hover:text-white"
+                <a href="/other-actions" class="text-gray-600 transition-colors hover:text-gray-800"
                   >Other Ways to Help</a
                 >
               </li>
               <li>
-                <a href="/resources" class="text-gray-300 transition-colors hover:text-white"
+                <a href="/resources" class="text-gray-600 transition-colors hover:text-gray-800"
                   >Resources for Advocates</a
                 >
               </li>
@@ -107,7 +107,7 @@
           </div>
 
           <div>
-            <h3 class="mb-3 text-sm font-semibold uppercase tracking-wider text-gray-200">
+            <h3 class="mb-3 text-sm font-semibold uppercase tracking-wider text-gray-400">
               Resources
             </h3>
             <ul class="space-y-2">
@@ -116,7 +116,7 @@
                   href="https://showyourstripes.info/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="flex items-center text-gray-300 transition-colors hover:text-white"
+                  class="flex items-center text-gray-600 transition-colors hover:text-gray-800"
                 >
                   Show Your Stripes
                   <svg
@@ -140,7 +140,7 @@
                   href="https://climate.nasa.gov/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="flex items-center text-gray-300 transition-colors hover:text-white"
+                  class="flex items-center text-gray-600 transition-colors hover:text-gray-800"
                 >
                   NASA Climate
                   <svg
@@ -164,7 +164,7 @@
                   href="https://www.ipcc.ch/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="flex items-center text-gray-300 transition-colors hover:text-white"
+                  class="flex items-center text-gray-600 transition-colors hover:text-gray-800"
                 >
                   IPCC
                   <svg
@@ -187,27 +187,11 @@
           </div>
 
           <div>
-            <h3 class="mb-3 text-sm font-semibold uppercase tracking-wider text-gray-200">
+            <h3 class="mb-3 text-sm font-semibold uppercase tracking-wider text-gray-400">
               Contact
             </h3>
             <ul class="space-y-2">
-              <li class="text-gray-300">info@terramedic.org</li>
-              <li class="text-gray-300">Sign up for our newsletter:</li>
-              <li class="mt-2">
-                <form class="flex">
-                  <input
-                    type="email"
-                    placeholder="Your email"
-                    class="focus:ring-terra-blue w-full rounded-l-md px-2 py-1 text-sm text-gray-800 focus:outline-none focus:ring-1"
-                  />
-                  <button
-                    type="submit"
-                    class="bg-terra-blue hover:bg-terra-dark-blue rounded-r-md px-3 py-1 text-sm text-white transition-colors"
-                  >
-                    Subscribe
-                  </button>
-                </form>
-              </li>
+              <li class="text-gray-600">info@terramedic.org</li>
             </ul>
           </div>
         </div>
@@ -216,10 +200,10 @@
 
     <div class="mt-12 border-t border-gray-700 pt-6">
       <div class="flex flex-col items-center justify-between md:flex-row">
-        <p class="text-sm text-gray-400">
+        <p class="text-sm text-gray-800">
           © {new Date().getFullYear()} Terramedic Corps. Created for climate activism.
         </p>
-        <p class="mt-2 text-sm text-gray-400 md:mt-0">
+        <p class="mt-2 text-sm text-gray-800 md:mt-0">
           Data sourced from Show Your Stripes and climate science organizations.
         </p>
       </div>

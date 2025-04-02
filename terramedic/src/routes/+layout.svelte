@@ -1,6 +1,11 @@
 <script>
   import '../app.css';
   import { onMount } from 'svelte';
+  import { page } from '$app/stores';
+  import { initPageTracking } from '$lib/utils/analytics';
+
+  // Initialize Google Analytics tracking
+  initPageTracking(page);
 
   // Force light mode and remove any dark mode settings
   onMount(() => {

@@ -27,7 +27,7 @@
   <div class="navbar-background relative overflow-hidden shadow-md">
     <!-- Center blur overlay - edges stay clear -->
     <div
-      class="blur-container pointer-events-none absolute bottom-0 left-1/2 top-0 -translate-x-1/2"
+      class="blur-container pointer-events-none absolute top-0 bottom-0 left-1/2 -translate-x-1/2"
     ></div>
 
     <div class="container-narrow relative z-10">

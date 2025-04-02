@@ -5,7 +5,7 @@
   <div class="container-narrow">
     <div class="grid grid-cols-1 gap-8 md:grid-cols-3 lg:gap-12">
       <div class="md:col-span-1">
-        <div class="text-terra-blue-dark mb-2 text-2xl font-bold">Terramedic Corps</div>
+        <div class="text-terra-blue-dark mb-2 text-2xl font-bold">Terramedic</div>
         <p class="mb-4 max-w-md text-gray-600">
           Climate action starts with you. Join our community of change-makers dedicated to
           addressing the climate crisis.

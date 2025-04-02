@@ -4,7 +4,7 @@ test('homepage has correct title and buttons', async ({ page }) => {
   await page.goto('/');
 
   // Check title
-  await expect(page).toHaveTitle(/Terramedic Corps/);
+  await expect(page).toHaveTitle(/Terramedic/);
 
   // Check that main heading exists
   await expect(page.locator('h1:has-text("Climate Crisis")')).toBeVisible();

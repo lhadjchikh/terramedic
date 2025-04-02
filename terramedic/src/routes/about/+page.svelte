@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-  <title>About Warming Stripes | Terramedic Corps</title>
+  <title>About Warming Stripes | Terramedic</title>
   <meta
     name="description"
     content="Learn about warming stripes, what they represent, and why they are an important visualization of climate change."

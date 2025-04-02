@@ -5,32 +5,39 @@
 
   export let text = 'Click me';
   export let href = '/';
-  export let type = 'primary'; // primary or alternative
+  export let type = 'primary'; // primary, secondary, or purple
   export let size = 'lg';
   export let id = ''; // Optional ID for more specific tracking
+  export let fullWidth = false; // Whether the button should stretch full width
 
-  // Create style objects for primary and secondary buttons
+  // Create style objects for different button types
   const primaryStyle = `
     background-color: var(--terra-blue-color);
     transition: background-color 0.2s ease-in-out;
-  `;
-
-  const primaryHoverStyle = `
-    background-color: var(--terra-dark-blue-color);
+    width: 100%;
   `;
 
   const secondaryStyle = `
     background-color: var(--terra-green-color);
     transition: background-color 0.2s ease-in-out;
+    width: 100%;
   `;
 
-  const secondaryHoverStyle = `
-    background-color: var(--terra-dark-green-color);
+  const purpleStyle = `
+    background-color: #8a4baf;
+    transition: background-color 0.2s ease-in-out;
+    width: 100%;
   `;
 
   // Set up the dynamic style attribute based on the type
-  $: style = type === 'primary' ? primaryStyle : secondaryStyle;
-  $: customClass = type === 'primary' ? 'action-button-primary' : 'action-button-secondary';
+  $: style = type === 'primary' ? primaryStyle : type === 'purple' ? purpleStyle : secondaryStyle;
+
+  $: customClass =
+    type === 'primary'
+      ? 'action-button-primary'
+      : type === 'purple'
+        ? 'action-button-purple'
+        : 'action-button-secondary';
 
   // Handle click event for tracking
   function handleClick() {
@@ -49,7 +56,7 @@
   {href}
   color="none"
   {style}
-  class={`mx-auto justify-center text-white ${customClass}`}
+  class={`justify-center text-white ${customClass} ${fullWidth ? 'w-full' : 'w-full'}`}
   on:click={handleClick}
 >
   <span class="mr-2">{text}</span>
@@ -64,5 +71,9 @@
 
   :global(.action-button-secondary:hover) {
     background-color: var(--terra-dark-green-color) !important;
+  }
+
+  :global(.action-button-purple:hover) {
+    background-color: #6c3483 !important;
   }
 </style>

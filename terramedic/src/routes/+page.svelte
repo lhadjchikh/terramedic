@@ -8,19 +8,19 @@
   import { ArrowRightOutline } from 'flowbite-svelte-icons';
 
   const images = ['/images/2025GenerationsStripes.jpg', '/images/20252024ReviewGlobal.jpg'];
-  
+
   // Modal state
   let showModal = false;
   let modalImage = '/images/2025GenerationsStripes.jpg';
   let modalAlt = '2025 Generations Stripes';
-  
+
   // Function to open modal
   function openModal(src, alt) {
     modalImage = src;
     modalAlt = alt;
     showModal = true;
   }
-  
+
   // Function to close modal
   function closeModal() {
     showModal = false;
@@ -50,7 +50,9 @@
       />
 
       <!-- Subtle divider -->
-      <div class="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-b from-transparent to-gray-50 z-20"></div>
+      <div
+        class="absolute bottom-0 left-0 right-0 z-20 h-6 bg-gradient-to-b from-transparent to-gray-50"
+      ></div>
     </section>
 
     <!-- Main Content Section -->
@@ -87,9 +89,10 @@
                 class="absolute inset-0 bg-[url('/images/WarmingStripes-1850-2024.png')] bg-cover bg-center opacity-10"
               ></div>
               <!-- Clickable image that opens modal -->
-              <button 
-                class="relative z-10 mx-auto w-full max-w-md overflow-hidden rounded-lg shadow-lg cursor-pointer transition-transform hover:scale-[1.02]"
-                on:click={() => openModal('/images/2025GenerationsStripes.jpg', '2025 Generations Stripes')}
+              <button
+                class="relative z-10 mx-auto w-full max-w-md cursor-pointer overflow-hidden rounded-lg shadow-lg transition-transform hover:scale-[1.02]"
+                on:click={() =>
+                  openModal('/images/2025GenerationsStripes.jpg', '2025 Generations Stripes')}
                 title="Click to enlarge"
               >
                 <img
@@ -98,10 +101,23 @@
                   class="w-full object-contain"
                 />
                 <!-- Zoom indicator overlay -->
-                <div class="absolute right-2 bottom-2 flex h-8 w-8 items-center justify-center rounded-full bg-black/60 text-white">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M5 8a1 1 0 011-1h1V6a1 1 0 012 0v1h1a1 1 0 110 2H9v1a1 1 0 11-2 0V9H6a1 1 0 01-1-1z" />
-                    <path fill-rule="evenodd" d="M2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8zm6-4a4 4 0 100 8 4 4 0 000-8z" clip-rule="evenodd" />
+                <div
+                  class="absolute bottom-2 right-2 flex h-8 w-8 items-center justify-center rounded-full bg-black/60 text-white"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M5 8a1 1 0 011-1h1V6a1 1 0 012 0v1h1a1 1 0 110 2H9v1a1 1 0 11-2 0V9H6a1 1 0 01-1-1z"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8zm6-4a4 4 0 100 8 4 4 0 000-8z"
+                      clip-rule="evenodd"
+                    />
                   </svg>
                 </div>
               </button>
@@ -111,14 +127,14 @@
       </div>
 
       <!-- Take Action Section -->
-      <div id="take-action" class="mb-16 mt-16 pt-4 scroll-mt-20">
+      <div id="take-action" class="mb-16 mt-16 scroll-mt-20 pt-4">
         <div class="mb-12 text-center">
           <h2 class="text-terra-dark-blue mb-4 text-2xl font-bold md:text-3xl">
             Choose Your Path to Climate Action
           </h2>
           <p class="mx-auto max-w-2xl text-lg text-gray-700">
-            Join us in taking action. Whether you have time or money to contribute, you can make a
-            difference in addressing climate change.
+            Join us in taking action. Whether you have time or money to contribute—or neither!—you
+            can make a difference in addressing climate change.
           </p>
         </div>
 
@@ -166,7 +182,7 @@
   </main>
 
   <Footer />
-  
+
   <!-- Image modal component -->
   <ImageModal show={showModal} imageSrc={modalImage} imageAlt={modalAlt} on:close={closeModal} />
 </div>

@@ -17,13 +17,12 @@
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
-            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
           />
         </svg>
       </div>
       <div class="card-content">
-        <p class="tip">I have time to spare</p>
-        <p class="second-text">Volunteer your free time <span class="arrow">→</span></p>
+        <p class="tip">I have time to spare.</p>
       </div>
     </div>
   </a>
@@ -46,8 +45,7 @@
         </svg>
       </div>
       <div class="card-content">
-        <p class="tip">I have money to spare</p>
-        <p class="second-text">Put your money to good use <span class="arrow">→</span></p>
+        <p class="tip">I have money to spare.</p>
       </div>
     </div>
   </a>
@@ -65,13 +63,13 @@
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
-            d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"
+            d="M15.182 16.318A4.486 4.486 0 0 0 12.016 15a4.486 4.486 0 0 0-3.198 1.318M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z"
           />
         </svg>
       </div>
       <div class="card-content">
-        <p class="tip">I have no time and no money</p>
-        <p class="second-text">We know the feeling. Don't despair <span class="arrow">→</span></p>
+        <p class="tip">No time. No money.</p>
+        <p class="second-text">(We know the feeling!)</p>
       </div>
     </div>
   </a>

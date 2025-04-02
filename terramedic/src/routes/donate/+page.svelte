@@ -1,9 +1,8 @@
 <script>
   import { donationOrganizations } from '$lib/data/donation-orgs.js';
   import OrganizationCard from '$lib/components/OrganizationCard.svelte';
-  import Logo from '$lib/components/Logo.svelte';
+  import NavBar from '$lib/components/NavBar.svelte';
   import Footer from '$lib/components/Footer.svelte';
-  import WarmingStripes from '$lib/components/WarmingStripes.svelte';
 </script>
 
 <svelte:head>
@@ -14,38 +13,20 @@
   />
 </svelte:head>
 
-<div class="flex min-h-screen flex-col">
-  <header class="bg-white shadow-sm">
-    <div class="container-narrow flex items-center justify-between py-4">
-      <a href="/" class="flex items-center">
-        <Logo size="small" />
-      </a>
-      <nav>
-        <ul class="flex space-x-6">
-          <li><a href="/" class="hover:text-terra-blue text-gray-600">Home</a></li>
-          <li><a href="/about" class="hover:text-terra-blue text-gray-600">About</a></li>
-          <li>
-            <a href="/volunteer" class="hover:text-terra-blue text-gray-600">Volunteer</a>
-          </li>
-          <li><a href="/donate" class="text-terra-blue font-medium">Donate</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<div class="flex min-h-screen flex-col bg-gray-50">
+  <NavBar />
 
   <main class="flex-grow">
-    <div class="container-narrow py-8">
-      <div class="mb-8">
-        <WarmingStripes />
-      </div>
-
-      <h1 class="page-title mb-2 text-center">Support Climate Action</h1>
+    <div class="container-narrow py-12">
+      <h1 class="text-terra-dark-blue mb-4 text-center text-3xl font-bold md:text-4xl lg:text-5xl">
+        Support Climate Action
+      </h1>
       <p class="mx-auto mb-10 max-w-2xl text-center text-lg text-gray-600">
         Your financial support enables these organizations to scale their impact and implement
         powerful climate solutions. Every contribution makes a difference.
       </p>
 
-      <div class="grid gap-6 md:grid-cols-2">
+      <div class="mx-auto grid max-w-4xl gap-6 px-4 sm:px-6 md:grid-cols-2">
         {#each donationOrganizations as org}
           <OrganizationCard
             name={org.name}
@@ -59,7 +40,9 @@
       </div>
 
       <div class="mt-12 rounded-lg bg-white p-6 shadow-sm">
-        <h2 class="section-title mb-4 text-center">Maximizing Your Climate Giving Impact</h2>
+        <h2 class="text-terra-dark-blue mb-4 text-center text-xl font-bold md:text-2xl">
+          Maximizing Your Climate Giving Impact
+        </h2>
         <p class="mb-3">
           When donating to climate organizations, consider these factors to maximize your impact:
         </p>

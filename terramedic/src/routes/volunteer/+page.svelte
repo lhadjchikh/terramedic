@@ -1,9 +1,8 @@
 <script>
   import { volunteerOrganizations } from '$lib/data/volunteer-orgs.js';
   import OrganizationCard from '$lib/components/OrganizationCard.svelte';
-  import Logo from '$lib/components/Logo.svelte';
+  import NavBar from '$lib/components/NavBar.svelte';
   import Footer from '$lib/components/Footer.svelte';
-  import WarmingStripes from '$lib/components/WarmingStripes.svelte';
 </script>
 
 <svelte:head>
@@ -14,38 +13,20 @@
   />
 </svelte:head>
 
-<div class="flex min-h-screen flex-col">
-  <header class="bg-white shadow-sm">
-    <div class="container-narrow flex items-center justify-between py-4">
-      <a href="/" class="flex items-center">
-        <Logo size="small" />
-      </a>
-      <nav>
-        <ul class="flex space-x-6">
-          <li><a href="/" class="hover:text-terra-blue text-gray-600">Home</a></li>
-          <li><a href="/about" class="hover:text-terra-blue text-gray-600">About</a></li>
-          <li><a href="/volunteer" class="text-terra-blue font-medium">Volunteer</a></li>
-          <li>
-            <a href="/donate" class="hover:text-terra-blue text-gray-600">Donate</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<div class="flex min-h-screen flex-col bg-gray-50">
+  <NavBar />
 
   <main class="flex-grow">
-    <div class="container-narrow py-8">
-      <div class="mb-8">
-        <WarmingStripes />
-      </div>
-
-      <h1 class="page-title mb-2 text-center">Volunteer Your Time</h1>
+    <div class="container-narrow py-12">
+      <h1 class="text-terra-dark-blue mb-4 text-center text-3xl font-bold md:text-4xl lg:text-5xl">
+        Volunteer Your Time
+      </h1>
       <p class="mx-auto mb-10 max-w-2xl text-center text-lg text-gray-600">
         These organizations are making a real impact on climate change and need people like you.
         Your time and skills can help build a sustainable future.
       </p>
 
-      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div class="mx-auto grid max-w-5xl gap-6 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-3">
         {#each volunteerOrganizations as org}
           <OrganizationCard
             name={org.name}
@@ -59,7 +40,9 @@
       </div>
 
       <div class="mt-12 rounded-lg bg-white p-6 shadow-sm">
-        <h2 class="section-title mb-4 text-center">Why Volunteer for Climate Action?</h2>
+        <h2 class="text-terra-dark-blue mb-4 text-center text-xl font-bold md:text-2xl">
+          Why Volunteer for Climate Action?
+        </h2>
         <p class="mb-3">
           Volunteering your time to climate organizations is one of the most effective ways to
           create change. When you volunteer, you:

@@ -1,7 +1,6 @@
 <script>
-  import Logo from '$lib/components/Logo.svelte';
+  import NavBar from '$lib/components/NavBar.svelte';
   import Footer from '$lib/components/Footer.svelte';
-  import WarmingStripes from '$lib/components/WarmingStripes.svelte';
   import ActionButton from '$lib/components/ActionButton.svelte';
 </script>
 
@@ -13,37 +12,19 @@
   />
 </svelte:head>
 
-<div class="flex min-h-screen flex-col">
-  <header class="bg-white shadow-sm">
-    <div class="container-narrow flex items-center justify-between py-4">
-      <a href="/" class="flex items-center">
-        <Logo size="small" />
-      </a>
-      <nav>
-        <ul class="flex space-x-6">
-          <li><a href="/" class="hover:text-terra-blue text-gray-600">Home</a></li>
-          <li><a href="/about" class="text-terra-blue font-medium">About</a></li>
-          <li>
-            <a href="/volunteer" class="hover:text-terra-blue text-gray-600">Volunteer</a>
-          </li>
-          <li>
-            <a href="/donate" class="hover:text-terra-blue text-gray-600">Donate</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<div class="flex min-h-screen flex-col bg-gray-50">
+  <NavBar />
 
   <main class="flex-grow">
-    <div class="container-narrow py-8">
-      <div class="mb-8">
-        <WarmingStripes />
-      </div>
-
-      <h1 class="page-title mb-6 text-center">Understanding Warming Stripes</h1>
+    <div class="container-narrow py-12">
+      <h1 class="text-terra-dark-blue mb-6 text-center text-3xl font-bold md:text-4xl lg:text-5xl">
+        Understanding Warming Stripes
+      </h1>
 
       <div class="mb-8 rounded-lg bg-white p-6 shadow-sm">
-        <h2 class="section-title">What are "Warming Stripes"?</h2>
+        <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">
+          What are "Warming Stripes"?
+        </h2>
         <p class="mb-4">
           Warming stripes (sometimes called "climate stripes") are a data visualization created by
           climate scientist Ed Hawkins in 2018. Each colored stripe represents the average
@@ -63,7 +44,7 @@
       </div>
 
       <div class="mb-8 rounded-lg bg-white p-6 shadow-sm">
-        <h2 class="section-title">Why They Matter</h2>
+        <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">Why They Matter</h2>
         <p class="mb-4">
           The beauty of warming stripes lies in their simplicity. They communicate the reality of
           climate change without technical graphs, numbers, or distracting elements. This makes the
@@ -82,7 +63,9 @@
       </div>
 
       <div class="mb-8 rounded-lg bg-white p-6 shadow-sm">
-        <h2 class="section-title">The Science Behind the Stripes</h2>
+        <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">
+          The Science Behind the Stripes
+        </h2>
         <p class="mb-4">
           The data used to create warming stripes comes from multiple scientific sources, including:
         </p>
@@ -103,7 +86,7 @@
       </div>
 
       <div class="mb-10 rounded-lg bg-white p-6 shadow-sm">
-        <h2 class="section-title">Take Action Now</h2>
+        <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">Take Action Now</h2>
         <p class="mb-6">
           The warming stripes are a clear call to action. The good news is that it's not too late to
           make a difference. You can help address climate change by:

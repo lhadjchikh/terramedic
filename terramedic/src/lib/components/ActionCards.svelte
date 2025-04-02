@@ -49,7 +49,7 @@
       </div>
     </div>
   </a>
-  <a href="/other-ways" class="card-link">
+  <a href="/other-actions" class="card-link">
     <div class="card purple">
       <div class="card-icon">
         <svg

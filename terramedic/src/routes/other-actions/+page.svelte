@@ -30,7 +30,7 @@
             <a href="/donate" class="hover:text-terra-blue text-gray-600">Donate</a>
           </li>
           <li>
-            <a href="/other-ways" class="text-terra-blue font-medium">Other Ways</a>
+            <a href="/other-actions" class="text-terra-blue font-medium">Other Ways</a>
           </li>
         </ul>
       </nav>

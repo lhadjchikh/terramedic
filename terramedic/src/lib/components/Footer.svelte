@@ -94,7 +94,7 @@
                 >
               </li>
               <li>
-                <a href="/other-ways" class="text-gray-300 transition-colors hover:text-white"
+                <a href="/other-actions" class="text-gray-300 transition-colors hover:text-white"
                   >Other Ways to Help</a
                 >
               </li>

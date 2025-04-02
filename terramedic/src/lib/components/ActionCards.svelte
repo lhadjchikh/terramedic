@@ -22,7 +22,7 @@
         </svg>
       </div>
       <div class="card-content">
-        <p class="tip">I have time to spare.</p>
+        <p class="tip">Have time to spare?</p>
       </div>
     </div>
   </a>
@@ -45,7 +45,7 @@
         </svg>
       </div>
       <div class="card-content">
-        <p class="tip">I have money to spare.</p>
+        <p class="tip">Have money to spare?</p>
       </div>
     </div>
   </a>
@@ -68,8 +68,8 @@
         </svg>
       </div>
       <div class="card-content">
-        <p class="tip">No time. No money.</p>
-        <p class="second-text">(We know the feeling!)</p>
+        <p class="tip">No time? No money?</p>
+        <p class="second-text">We know the feeling!</p>
       </div>
     </div>
   </a>

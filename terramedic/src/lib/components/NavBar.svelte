@@ -17,9 +17,6 @@
 
 <div class="sticky top-0 z-50">
   <div class="navbar-background relative overflow-hidden shadow-md">
-    <!-- Warming stripes visualization as a thin accent bar -->
-    <div class="h-2 w-full bg-gradient-to-r from-blue-500 via-yellow-400 to-red-600"></div>
-
     <!-- Main navigation with center blur and clear edges -->
     <div class="relative">
       <!-- Center blur only - edges stay clear -->

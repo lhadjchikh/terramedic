@@ -1,7 +1,7 @@
 <script>
   import '../app.css';
   import { onMount } from 'svelte';
-  
+
   // Force light mode and remove any dark mode settings
   onMount(() => {
     if (typeof window !== 'undefined') {

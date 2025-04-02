@@ -21,7 +21,7 @@
     <div class="relative">
       <!-- Center blur only - edges stay clear -->
       <div
-        class="blur-container pointer-events-none absolute bottom-0 left-1/2 top-0 -translate-x-1/2"
+        class="blur-container pointer-events-none absolute top-0 bottom-0 left-1/2 -translate-x-1/2"
       ></div>
 
       <div class="container-narrow relative z-10">
@@ -71,9 +71,9 @@
         <div
           class="lg:hidden {isMenuOpen
             ? 'block'
-            : 'hidden'} bg-terra-dark-blue/95 absolute left-0 right-0 z-20 shadow-lg"
+            : 'hidden'} bg-terra-dark-blue/95 absolute right-0 left-0 z-20 shadow-lg"
         >
-          <div class="space-y-1 pb-3 pt-2">
+          <div class="space-y-1 pt-2 pb-3">
             <a href="/" class="nav-link-mobile {activeUrl === '/' ? 'active' : ''}">Home</a>
             <a href="/about" class="nav-link-mobile {activeUrl === '/about' ? 'active' : ''}"
               >About</a

@@ -62,7 +62,11 @@
   @apply text-gray-700 !important;
 }
 
-:global(.card h1), :global(.card h2), :global(.card h3), 
-:global(.card h4), :global(.card h5), :global(.card h6) {
+:global(.card h1),
+:global(.card h2),
+:global(.card h3),
+:global(.card h4),
+:global(.card h5),
+:global(.card h6) {
   @apply text-gray-900 !important;
 }

@@ -24,5 +24,5 @@ export default {
     }
   },
   plugins: [flowbitePlugin, aspectRatioPlugin],
-  darkMode: false  // Completely disable dark mode
+  darkMode: false // Completely disable dark mode
 };

@@ -1,4 +1,4 @@
-<footer class="bg-terra-dark-blue mt-16 pb-8 pt-12 text-gray-800">
+<footer class="bg-terra-dark-blue mt-16 pt-12 pb-8 text-gray-800">
   <!-- Top warming stripes accent bar -->
   <div class="mb-8 h-1.5 w-full bg-gradient-to-r from-blue-500 via-yellow-400 to-red-600"></div>
 
@@ -34,7 +34,7 @@
       <div class="md:col-span-2">
         <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
           <div>
-            <h3 class="mb-3 text-sm font-semibold uppercase tracking-wider text-gray-400">
+            <h3 class="mb-3 text-sm font-semibold tracking-wider text-gray-400 uppercase">
               Navigation
             </h3>
             <ul class="space-y-2">
@@ -70,7 +70,7 @@
           </div>
 
           <div>
-            <h3 class="mb-3 text-sm font-semibold uppercase tracking-wider text-gray-400">
+            <h3 class="mb-3 text-sm font-semibold tracking-wider text-gray-400 uppercase">
               Resources
             </h3>
             <ul class="space-y-2">
@@ -150,7 +150,7 @@
           </div>
 
           <div>
-            <h3 class="mb-3 text-sm font-semibold uppercase tracking-wider text-gray-400">
+            <h3 class="mb-3 text-sm font-semibold tracking-wider text-gray-400 uppercase">
               Contact
             </h3>
             <ul class="space-y-2">

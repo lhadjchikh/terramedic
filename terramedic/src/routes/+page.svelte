@@ -51,7 +51,7 @@
 
       <!-- Subtle divider -->
       <div
-        class="absolute bottom-0 left-0 right-0 z-20 h-6 bg-gradient-to-b from-transparent to-gray-50"
+        class="absolute right-0 bottom-0 left-0 z-20 h-6 bg-gradient-to-b from-transparent to-gray-50"
       ></div>
     </section>
 
@@ -102,7 +102,7 @@
                 />
                 <!-- Zoom indicator overlay -->
                 <div
-                  class="absolute bottom-2 right-2 flex h-8 w-8 items-center justify-center rounded-full bg-black/60 text-white"
+                  class="absolute right-2 bottom-2 flex h-8 w-8 items-center justify-center rounded-full bg-black/60 text-white"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -127,7 +127,7 @@
       </div>
 
       <!-- Take Action Section -->
-      <div id="take-action" class="mb-16 mt-16 scroll-mt-20 pt-4">
+      <div id="take-action" class="mt-16 mb-16 scroll-mt-20 pt-4">
         <div class="mb-12 text-center">
           <h2 class="text-terra-dark-blue mb-4 text-2xl font-bold md:text-3xl">
             Choose Your Path to Climate Action

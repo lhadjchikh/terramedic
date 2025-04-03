@@ -1,3 +1,63 @@
 [build]
   command = "yarn build"
   publish = "build"
+
+# Define form handling
+[forms]
+  # Newsletter signup form
+  [forms.newsletter-signup]
+    name = "Newsletter Signup"
+    
+    # Success message shown when form successfully submits
+    success_message = "Thank you for signing up for our newsletter!"
+    
+    # Define form fields
+    [forms.newsletter-signup.fields]
+      [forms.newsletter-signup.fields.email]
+        title = "Email"
+        required = true
+        
+    # Optional - forward submissions to your Google Workspace
+    [forms.newsletter-signup.actions]
+      [forms.newsletter-signup.actions.email]
+        to = "info@terramedic.org"
+        subject = "New Newsletter Signup"
+  
+  # Contact form
+  [forms.contact-form]
+    name = "Contact Form"
+    
+    # Success message shown when form successfully submits
+    success_message = "Thank you for your message! We'll get back to you soon."
+    
+    # Define form fields
+    [forms.contact-form.fields]
+      [forms.contact-form.fields.firstName]
+        title = "First Name"
+        required = true
+      
+      [forms.contact-form.fields.lastName]
+        title = "Last Name"
+        required = true
+      
+      [forms.contact-form.fields.email]
+        title = "Email"
+        required = true
+      
+      [forms.contact-form.fields.organization]
+        title = "Organization"
+        required = false
+      
+      [forms.contact-form.fields.subject]
+        title = "Subject"
+        required = true
+      
+      [forms.contact-form.fields.message]
+        title = "Message"
+        required = true
+        
+    # Forward submissions to your Google Workspace
+    [forms.contact-form.actions]
+      [forms.contact-form.actions.email]
+        to = "info@terramedic.org"
+        subject = "New Contact Form Submission"

@@ -215,9 +215,10 @@
           </div>
         </div>
       </div>
-      <form name="contact-form" netlify>
-        <input type="email" name="email" />
-        <button type="submit">Send</button>
+      <form name="test-form" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="test-form" />
+        <input type="text" name="name" required />
+        <button type="submit">Submit</button>
       </form>
     </section>
   </main>

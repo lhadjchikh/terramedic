@@ -7,6 +7,8 @@
   import { Card, Heading, A, Button } from 'flowbite-svelte';
   import { ArrowRightOutline } from 'flowbite-svelte-icons';
 
+  export let form;
+
   const images = ['/images/2025GenerationsStripes.jpg', '/images/20252024ReviewGlobal.jpg'];
 
   // Modal state
@@ -216,7 +218,7 @@
     </section>
   </main>
 
-  <Footer />
+  <Footer {form} />
 
   <!-- Image modal component -->
   <ImageModal show={showModal} imageSrc={modalImage} imageAlt={modalAlt} on:close={closeModal} />

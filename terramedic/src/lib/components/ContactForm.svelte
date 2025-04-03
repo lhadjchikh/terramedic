@@ -2,6 +2,9 @@
   import { Button, Input, Label, Textarea } from 'flowbite-svelte';
   import { onMount } from 'svelte';
 
+  // Receive form data from SvelteKit form actions
+  export let form = undefined;
+
   // Form state
   let firstName = '';
   let lastName = '';
@@ -13,45 +16,64 @@
   let isSuccess = false;
   let errorMessage = '';
 
+  // Form can be handled by SvelteKit's form actions or client-side
+  // If form is defined, use SvelteKit's enhanced form actions
+  $: if (form?.success) {
+    isSuccess = true;
+    firstName = '';
+    lastName = '';
+    email = '';
+    message = '';
+    subject = '';
+    organization = '';
+  } else if (form?.error) {
+    errorMessage = form.message || 'There was a problem submitting your message. Please try again.';
+  }
+
   // Function to handle form submission
   async function handleSubmit(event) {
-    // Prevent default form submission
+    // Prevent default form submission if not using enhanced form handling
     if (!event.target.checkValidity()) {
       return;
     }
 
-    event.preventDefault();
-    isSubmitting = true;
-    errorMessage = '';
+    if (!form) {
+      // Client-side submission if no SvelteKit form handling is available
+      event.preventDefault();
+      isSubmitting = true;
+      errorMessage = '';
 
-    try {
-      // Netlify Forms handles this automatically when form has data-netlify="true"
-      const formData = new FormData(event.target);
+      try {
+        // Netlify Forms handles this automatically when form has data-netlify="true"
+        const formData = new FormData(event.target);
 
-      // For Netlify, we need to include form-name
-      formData.append('form-name', 'contact-form');
+        // For Netlify, we need to include form-name
+        formData.append('form-name', 'contact-form');
 
-      const response = await fetch('/', {
-        method: 'POST',
-        body: formData
-      });
+        const formEntries = Object.fromEntries(formData.entries());
+        const response = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(formEntries).toString()
+        });
 
-      if (response.ok) {
-        isSuccess = true;
-        firstName = '';
-        lastName = '';
-        email = '';
-        message = '';
-        subject = '';
-        organization = '';
-      } else {
-        throw new Error('Network response was not ok');
+        if (response.ok) {
+          isSuccess = true;
+          firstName = '';
+          lastName = '';
+          email = '';
+          message = '';
+          subject = '';
+          organization = '';
+        } else {
+          throw new Error('Network response was not ok');
+        }
+      } catch (error) {
+        console.error('Error submitting form:', error);
+        errorMessage = 'There was a problem submitting your message. Please try again.';
+      } finally {
+        isSubmitting = false;
       }
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      errorMessage = 'There was a problem submitting your message. Please try again.';
-    } finally {
-      isSubmitting = false;
     }
   }
 

@@ -2,6 +2,8 @@
   import NavBar from '$lib/components/NavBar.svelte';
   import Footer from '$lib/components/Footer.svelte';
   import ContactForm from '$lib/components/ContactForm.svelte';
+
+  export let form;
 </script>
 
 <svelte:head>
@@ -34,7 +36,7 @@
         </p>
       </div>
 
-      <ContactForm />
+      <ContactForm {form} />
     </div>
   </main>
 

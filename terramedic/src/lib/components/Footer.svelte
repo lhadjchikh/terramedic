@@ -1,5 +1,6 @@
 <script>
   import SignupForm from './SignupForm.svelte';
+  export let form;
 </script>
 
 <footer class="bg-terra-dark-blue mt-16 pt-12 pb-8 text-gray-800">
@@ -171,7 +172,7 @@
             </div>
 
             <!-- Newsletter Sign-up Form -->
-            <SignupForm />
+            <SignupForm {form} />
           </div>
         </div>
       </div>

@@ -2,6 +2,8 @@
   import { Button, Input, Label } from 'flowbite-svelte';
   import { onMount } from 'svelte';
 
+  export let form;
+
   // Form state
   let email = '';
   let isSubmitting = false;

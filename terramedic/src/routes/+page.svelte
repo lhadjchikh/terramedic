@@ -54,7 +54,7 @@
         alt="Anyone can become a terramedic"
         size="large"
         title="Turn&nbsp;awareness into&nbsp;action"
-        description="The warming stripes visually tell the story of our planet's rising temperatures. Move beyond awareness and join our community of climate advocates helping to heal our planet and preserve our world for future generations."
+        description="Move beyond awareness and join our community of climate advocates helping to heal our planet and preserve our world for future generations."
       />
 
       <!-- Subtle divider -->

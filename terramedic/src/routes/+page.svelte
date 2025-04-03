@@ -215,11 +215,6 @@
           </div>
         </div>
       </div>
-      <form name="test-form" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="test-form" />
-        <input type="text" name="name" required />
-        <button type="submit">Submit</button>
-      </form>
     </section>
   </main>
 

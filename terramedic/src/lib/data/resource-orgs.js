@@ -27,6 +27,15 @@ export const resourceOrgs = [
     tags: ['Communication', 'Research', 'Public Opinion']
   },
   {
+    name: 'Potential Energy Coalition',
+    description:
+      'Potential Energy Coalition is a nonprofit organization that uses the power of marketing and storytelling to inspire climate action. They create campaigns that connect with people emotionally and motivate them to act.',
+    websiteUrl: 'https://potentialenergycoalition.org/',
+    imageUrl: '/images/potential-energy.jpg', // Replace with actual image path if available
+    actionText: 'Visit Potential Energy Coalition',
+    tags: ['Marketing', 'Storytelling', 'Climate Action']
+  },
+  {
     name: 'Project Drawdown',
     description:
       'Research on climate solutions ranked by impact potential. Project Drawdown provides actionable insights for reducing greenhouse gas emissions.',

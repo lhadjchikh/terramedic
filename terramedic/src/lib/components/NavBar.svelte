@@ -63,6 +63,9 @@
           <NavLi href="/resources" active={activeUrl === '/resources'} class="nav-item">
             <span class="nav-link">Resources</span>
           </NavLi>
+          <NavLi href="/contact-us" active={activeUrl === '/contact-us'} class="nav-item">
+            <span class="nav-link">Contact</span>
+          </NavLi>
         </NavUl>
       </Navbar>
     </div>

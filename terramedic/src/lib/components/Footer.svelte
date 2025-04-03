@@ -156,13 +156,20 @@
           <div>
             <div class="mb-6">
               <h3 class="mb-3 text-sm font-semibold tracking-wider text-gray-400 uppercase">
-                Contact
+                Contact Us
               </h3>
               <ul class="space-y-2">
-                <li class="text-gray-600">info@terramedic.org</li>
+                <li class="text-gray-600">
+                  <a href="mailto:info@terramedic.org" class="text-gray-600 hover:text-gray-800"
+                    >info@terramedic.org</a
+                  >
+                </li>
+                <li>
+                  <a href="/contact-us" class="text-gray-600 hover:text-gray-800">Contact Form</a>
+                </li>
               </ul>
             </div>
-            
+
             <!-- Newsletter Sign-up Form -->
             <SignupForm />
           </div>

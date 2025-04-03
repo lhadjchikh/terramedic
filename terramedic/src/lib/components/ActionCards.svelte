@@ -22,7 +22,7 @@
         </svg>
       </div>
       <div class="card-content">
-        <p class="tip">Have time to spare?</p>
+        <p class="tip">Have time to&nbsp;spare?</p>
       </div>
     </div>
   </a>
@@ -45,7 +45,7 @@
         </svg>
       </div>
       <div class="card-content">
-        <p class="tip">Have money to spare?</p>
+        <p class="tip">Have money to&nbsp;spare?</p>
       </div>
     </div>
   </a>
@@ -68,7 +68,7 @@
         </svg>
       </div>
       <div class="card-content">
-        <p class="tip">No time? No money?</p>
+        <p class="tip">No&nbsp;time? No&nbsp;money?</p>
         <p class="second-text">We know the feeling!</p>
       </div>
     </div>
@@ -145,7 +145,7 @@
   }
 
   .tip {
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 700;
     margin: 0;
     line-height: 1.4;
@@ -153,7 +153,7 @@
 
   @media (min-width: 768px) {
     .tip {
-      font-size: 1.125rem;
+      font-size: 1.25rem;
     }
   }
 

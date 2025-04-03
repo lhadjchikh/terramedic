@@ -1,5 +1,6 @@
 import type { Actions } from './$types';
 import { submitForm } from '$lib/server/submit-form';
+export const prerender = true;
 
 export const actions: Actions = {
   default: async ({ request }) => {

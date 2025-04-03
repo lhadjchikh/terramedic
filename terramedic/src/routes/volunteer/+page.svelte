@@ -61,5 +61,5 @@
     </div>
   </main>
 
-  <Footer />
+  <Footer {form} />
 </div>

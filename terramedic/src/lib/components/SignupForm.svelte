@@ -2,24 +2,35 @@
   import { Button, Input, Label } from 'flowbite-svelte';
   import { onMount } from 'svelte';
 
-  export let form;
+  // Receive form data from SvelteKit form actions
+  export let form = undefined;
 
   // Form state
   let email = '';
   let isSubmitting = false;
   let isSuccess = false;
   let errorMessage = '';
+  
+  // Handle server-side form responses
+  $: if (form?.success) {
+    isSuccess = true;
+    email = '';
+  } else if (form?.error) {
+    errorMessage = form.message || 'There was a problem submitting your information. Please try again.';
+  }
 
   // Function to handle form submission
   async function handleSubmit(event) {
-    // Prevent default form submission
+    // Prevent default form submission if not using enhanced form handling
     if (!event.target.checkValidity()) {
       return;
     }
-
-    event.preventDefault();
-    isSubmitting = true;
-    errorMessage = '';
+    
+    if (!form) {
+      // Client-side submission if no SvelteKit form handling is available
+      event.preventDefault();
+      isSubmitting = true;
+      errorMessage = '';
 
     try {
       // Netlify Forms handles this automatically when form has data-netlify="true"
@@ -47,6 +58,7 @@
     } finally {
       isSubmitting = false;
     }
+  }
   }
 
   // Reset the success message after a delay

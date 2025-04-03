@@ -10,13 +10,14 @@
   let isSubmitting = false;
   let isSuccess = false;
   let errorMessage = '';
-  
+
   // Handle server-side form responses
   $: if (form?.success) {
     isSuccess = true;
     email = '';
   } else if (form?.error) {
-    errorMessage = form.message || 'There was a problem submitting your information. Please try again.';
+    errorMessage =
+      form.message || 'There was a problem submitting your information. Please try again.';
   }
 
   // Function to handle form submission
@@ -25,40 +26,40 @@
     if (!event.target.checkValidity()) {
       return;
     }
-    
+
     if (!form) {
       // Client-side submission if no SvelteKit form handling is available
       event.preventDefault();
       isSubmitting = true;
       errorMessage = '';
 
-    try {
-      // Netlify Forms handles this automatically when form has data-netlify="true"
-      const formData = new FormData(event.target);
+      try {
+        // Netlify Forms handles this automatically when form has data-netlify="true"
+        const formData = new FormData(event.target);
 
-      // For Netlify, we need to include form-name
-      formData.append('form-name', 'newsletter-signup');
+        // For Netlify, we need to include form-name
+        formData.append('form-name', 'newsletter-signup');
 
-      const formEntries = Object.fromEntries(formData.entries());
-      const response = await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formEntries).toString()
-      });
+        const formEntries = Object.fromEntries(formData.entries());
+        const response = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(formEntries).toString()
+        });
 
-      if (response.ok) {
-        isSuccess = true;
-        email = '';
-      } else {
-        throw new Error('Network response was not ok');
+        if (response.ok) {
+          isSuccess = true;
+          email = '';
+        } else {
+          throw new Error('Network response was not ok');
+        }
+      } catch (error) {
+        console.error('Error submitting form:', error);
+        errorMessage = 'There was a problem submitting your information. Please try again.';
+      } finally {
+        isSubmitting = false;
       }
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      errorMessage = 'There was a problem submitting your information. Please try again.';
-    } finally {
-      isSubmitting = false;
     }
-  }
   }
 
   // Reset the success message after a delay

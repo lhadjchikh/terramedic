@@ -26,9 +26,11 @@
       // For Netlify, we need to include form-name
       formData.append('form-name', 'newsletter-signup');
 
+      const formEntries = Object.fromEntries(formData.entries());
       const response = await fetch('/', {
         method: 'POST',
-        body: formData
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formEntries).toString()
       });
 
       if (response.ok) {

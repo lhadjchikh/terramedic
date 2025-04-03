@@ -54,10 +54,12 @@
     <div style="display: contents">%sveltekit.body%</div>
 
     <form name="newsletter-signup" netlify hidden>
+      <input type="hidden" name="form-name" value="newsletter-signup" />
       <input type="email" name="email" />
     </form>
 
     <form name="contact-form" netlify hidden>
+      <input type="hidden" name="form-name" value="contact-form" />
       <input type="email" name="email" />
       <textarea name="message"></textarea>
     </form>

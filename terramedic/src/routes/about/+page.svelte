@@ -2,6 +2,8 @@
   import NavBar from '$lib/components/NavBar.svelte';
   import Footer from '$lib/components/Footer.svelte';
   import ActionButton from '$lib/components/ActionButton.svelte';
+
+  export let form = 'undefined';
 </script>
 
 <svelte:head>
@@ -131,5 +133,5 @@
     </div>
   </main>
 
-  <Footer />
+  <Footer {form} />
 </div>

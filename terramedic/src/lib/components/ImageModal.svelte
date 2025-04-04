@@ -25,19 +25,27 @@
   <!-- Modal backdrop with click action to close -->
   <div
     class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 transition-opacity duration-300"
+    role="button"
+    aria-label="Close"
+    tabindex="0"
     on:click={closeModal}
+    on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && closeModal()}
   >
     <!-- Modal content - stop propagation to prevent closing when clicking on the image -->
     <div
       class="relative max-h-[90vh] max-w-[90vw] overflow-hidden rounded-lg bg-white shadow-xl"
+      role="dialog"
+      aria-modal="true"
+      tabindex="0"
       on:click|stopPropagation
+      on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && closeModal()}
     >
       <!-- Close button -->
       <button
         type="button"
         class="absolute top-3 right-3 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-black/60 text-white hover:bg-black/80 focus:outline-none"
-        on:click={closeModal}
         aria-label="Close"
+        on:click={closeModal}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -3,6 +3,8 @@
   import OrganizationCard from '$lib/components/OrganizationCard.svelte';
   import NavBar from '$lib/components/NavBar.svelte';
   import Footer from '$lib/components/Footer.svelte';
+
+  export let form;
 </script>
 
 <svelte:head>

@@ -3,6 +3,8 @@
   import Footer from '$lib/components/Footer.svelte';
   import OrganizationCard from '$lib/components/OrganizationCard.svelte';
   import { resourceOrgs } from '$lib/data/resource-orgs.js';
+
+  export let form;
 </script>
 
 <svelte:head>
@@ -40,5 +42,5 @@
     </div>
   </main>
 
-  <Footer />
+  <Footer {form} />
 </div>

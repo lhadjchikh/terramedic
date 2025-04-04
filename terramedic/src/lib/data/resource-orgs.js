@@ -27,6 +27,15 @@ export const resourceOrgs = [
     tags: ['Communication', 'Research', 'Public Opinion']
   },
   {
+    name: 'Work On Climate',
+    description:
+      'Work On Climate is a global community of professionals working together to accelerate climate solutions. They provide networking opportunities, resources, and support for individuals and organizations tackling the climate crisis.',
+    websiteUrl: 'https://workonclimate.org/',
+    imageUrl: '/images/work-on-climate.jpg', // Replace with actual image path if available
+    actionText: 'Visit Work On Climate',
+    tags: ['Community', 'Networking', 'Climate Action']
+  },
+  {
     name: 'Potential Energy Coalition',
     description:
       'Potential Energy Coalition is a nonprofit organization that uses the power of marketing and storytelling to inspire climate action. They create campaigns that connect with people emotionally and motivate them to act.',

@@ -1,7 +1,3 @@
-<script>
-  import { ArrowRightOutline } from 'flowbite-svelte-icons';
-</script>
-
 <div class="cards">
   <a href="/volunteer" class="card-link">
     <div class="card blue">
@@ -165,20 +161,11 @@
     align-items: center;
   }
 
-  .arrow {
-    margin-left: 0.25rem;
-    transition: transform 0.2s ease;
-  }
-
   .card:hover {
     transform: translateY(-5px);
     box-shadow:
       0 10px 15px -3px rgba(0, 0, 0, 0.1),
       0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  }
-
-  .card:hover .arrow {
-    transform: translateX(3px);
   }
 
   @media (min-width: 768px) {

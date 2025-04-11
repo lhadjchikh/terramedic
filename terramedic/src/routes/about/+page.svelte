@@ -70,9 +70,9 @@
           The Science Behind the Stripes
         </h2>
          <p class="mb-4">
-          <EM>The science is clear, the future is not.</em> - Ed Hawkins
+          <em>The science is clear, the future is not.</em> - Ed Hawkins
         </p>
-
+<p>
           The data used to create warming stripes comes from multiple scientific sources, including: NASA's Goddard Institute for Space Studies, NOAA's National Centers for Environmental Information, UK Met Office Hadley Centre, and the Berkeley Earth Surface Temperature project. These organizations maintain long-term temperature records using thousands of weather
           stations around the world, as well as ocean data from ships and buoys. Even with slight differences between these datasets, they all show the same overall pattern: a rapid warming trend, especially since the 1980s.
         </p>

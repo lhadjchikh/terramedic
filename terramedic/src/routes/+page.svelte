@@ -168,8 +168,6 @@
     </div>
   </main>
 
-  -->
-
   <Footer {form} />
 
   <!-- Image modal component -->

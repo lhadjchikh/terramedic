@@ -23,12 +23,13 @@
         Terramedic and Warming Stripes
       </h1>
 
-     <!-- PETER ADDED THIS SECTION AS OVERARCHING ABOUT US STATEMENT 4-11-2025 --> 
-     <div class="mb-8 rounded-lg bg-white p-6 shadow-sm">
+      <!-- PETER ADDED THIS SECTION AS OVERARCHING ABOUT US STATEMENT 4-11-2025 -->
+      <div class="mb-8 rounded-lg bg-white p-6 shadow-sm">
         <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">What We Do</h2>
         <p class="mb-4">
-          Terramedic turns awareness into action by connecting people who want to solve climate change with meaningful ways to heal our planet.
-      
+          Terramedic turns awareness into action by connecting people who want to solve climate
+          change with meaningful ways to heal our planet.
+        </p>
       </div>
 
       <div class="mb-8 rounded-lg bg-white p-6 shadow-sm">
@@ -36,13 +37,19 @@
           What are Warming Stripes?
         </h2>
         <p class="mb-4">
-          Terramedic promotes warming stripes everywhere we go because they communicate the story of climate change so powerfully and simply. 
+          Terramedic promotes warming stripes everywhere we go because they communicate the story of
+          climate change so powerfully and simply.
+        </p>
         <p class="mb-4">
-          Created by climate scientist Ed Hawkins in 2018, warming stripes represent the average temperature for individual years, relative to the average temperature over a baseline period, typically 1971-2000.           Red stripes represent years that were warmer than the baseline average, from lighter to deeper tones for the bigger differences. Blue stripes show the same for cooler years. Together, they paint the              picture of a warming planet.
+          Created by climate scientist Ed Hawkins in 2018, warming stripes represent the average
+          temperature for individual years, relative to the average temperature over a baseline
+          period, typically 1971-2000. Red stripes represent years that were warmer than the
+          baseline average, from lighter to deeper tones for the bigger differences. Blue stripes
+          show the same for cooler years. Together, they paint the picture of a warming planet.
         </p>
       </div>
 
-<!-- PETER COMMENTED OUT THIS SECTION 4-11-2025
+      <!-- PETER COMMENTED OUT THIS SECTION 4-11-2025
 
       <div class="mb-8 rounded-lg bg-white p-6 shadow-sm">
         <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">Why They Matter</h2>
@@ -69,17 +76,22 @@
         <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">
           The Science Behind the Stripes
         </h2>
-         <p class="mb-4">
+        <p class="mb-4">
           <em>The science is clear, the future is not.</em> - Ed Hawkins
         </p>
-<p>
-          The data used to create warming stripes comes from multiple scientific sources, including: NASA's Goddard Institute for Space Studies, NOAA's National Centers for Environmental Information, UK Met Office Hadley Centre, and the Berkeley Earth Surface Temperature project. These organizations maintain long-term temperature records using thousands of weather
-          stations around the world, as well as ocean data from ships and buoys. Even with slight differences between these datasets, they all show the same overall pattern: a rapid warming trend, especially since the 1980s.
+        <p>
+          The data used to create warming stripes comes from multiple scientific sources, including:
+          NASA's Goddard Institute for Space Studies, NOAA's National Centers for Environmental
+          Information, UK Met Office Hadley Centre, and the Berkeley Earth Surface Temperature
+          project. These organizations maintain long-term temperature records using thousands of
+          weather stations around the world, as well as ocean data from ships and buoys. Even with
+          slight differences between these datasets, they all show the same overall pattern: a rapid
+          warming trend, especially since the 1980s.
         </p>
-       <p class="mb-4">
-          The stripes buttons at Terramedic events help people get involved. The first step is wearing one and telling people what it means. The second step is up to you.
-         </p>
-
+        <p class="mb-4">
+          The stripes buttons at Terramedic events help people get involved. The first step is
+          wearing one and telling people what it means. The second step is up to you.
+        </p>
       </div>
 
       <div class="mb-10 rounded-lg bg-white p-6 shadow-sm">
@@ -88,10 +100,9 @@
         <div class="flex flex-col md:flex-row">
           <div class="w-full pr-0 md:w-3/5 md:pr-8">
             <p class="mb-4">
-              You can help address climate change right now by volunteering your time or supporting climate organizations. Every contribution matters. Choose a path here to get started.
-
+              You can help address climate change right now by volunteering your time or supporting
+              climate organizations. Every contribution matters. Choose a path here to get started.
             </p>
-                
           </div>
 
           <div class="mt-6 w-full md:mt-0 md:w-2/5">

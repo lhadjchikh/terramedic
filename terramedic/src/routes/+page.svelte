@@ -167,56 +167,6 @@
       </div>
     </div>
 
-    <!-- PETER COMMENTING OUT THIS SECTION 4-11-2025
-
-    <!-- About Project Section with Background -->
-    <section class="from-terra-blue/10 to-terra-green/10 bg-gradient-to-br py-16">
-      <div class="container-narrow">
-        <!-- Match width with other panels -->
-        <div class="overflow-hidden rounded-xl bg-white shadow-sm">
-          <div class="flex flex-col md:flex-row">
-            <!-- Button image on the left -->
-            <div class="flex w-full items-center justify-center bg-gray-50 p-8 md:w-1/3 md:p-10">
-              <div
-                class="relative max-w-[220px] overflow-hidden rounded-lg shadow-md transition-transform hover:scale-105"
-              >
-                <img
-                  src="/images/warming-stripes-button.png"
-                  alt="Climate warming stripes button"
-                  class="h-auto w-full"
-                />
-                <div class="absolute inset-0 rounded-lg ring-1 ring-gray-300/30"></div>
-              </div>
-            </div>
-
-            <!-- Text content on the right -->
-            <div class="flex w-full items-center p-8 md:w-2/3 md:p-10">
-              <div>
-                <h3 class="text-terra-dark-blue mb-4 text-2xl font-bold md:text-3xl">
-                  About This Project
-                </h3>
-                <p class="mb-4 text-lg text-gray-700">
-                  This website was created to accompany the warming stripes buttons (shown left)
-                  distributed at climate outreach events.
-                </p>
-                <p class="mb-6 text-lg text-gray-700">
-                  Our goal is to help people understand what the warming stripes represent and
-                  provide clear, actionable ways to get involved in climate solutions, whether
-                  through volunteering, donations, or other forms of climate advocacy.
-                </p>
-                <div class="mt-6">
-                  <Button href="/about" color="blue" class="font-medium">
-                    <span>Learn more about warming stripes</span>
-                    <ArrowRightOutline class="ml-1 h-4 w-4" />
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     -->
   </main>
 

@@ -55,7 +55,7 @@
         src="/images/hero.svg"
         alt="Anyone can become a terramedic"
         size="large"
-        title="Turn&nbsp;awareness into&nbsp;action"
+        title="Ready&nbsp;to&nbsp;take&nbsp;action?"
         description="Move beyond awareness and join our community of climate advocates helping to heal our planet and preserve our world for future generations."
       />
 
@@ -69,7 +69,38 @@
     <section class="section container-narrow">
       <h2 class="section-title text-terra-dark-blue">Climate Crisis: Our Shared Challenge</h2>
 
-      <!-- Understanding Warming Stripes Section -->
+
+      <!-- Take Action Section -->
+      <div id="take-action" class="mt-16 mb-16 scroll-mt-20 pt-4">
+        <div class="mb-10 px-4 text-center md:mb-12">
+          <h2 class="text-terra-dark-blue mb-4 text-2xl font-bold md:text-3xl">
+            Choose Your Path to Climate Action
+          </h2>
+          <p class="mx-auto max-w-2xl text-base text-gray-700 md:text-lg">
+            Become a terramedic and start healing our planet today. Even if your time or money is limited, you can make a difference.
+          </p>
+        </div>
+
+        <!-- Action Cards -->
+        <div class="mx-auto max-w-4xl">
+          <ActionCards />
+        </div>
+
+        <!-- Resources Link -->
+        <div class="mt-10 px-4 text-center md:mt-12">
+          <A
+            href="/resources"
+            class="text-terra-dark-blue hover:text-terra-blue inline-flex flex-wrap items-center justify-center text-lg font-medium transition-colors md:text-xl"
+          >
+            <span class="mr-1">Already a climate advocate? Find resources here</span>
+            <ArrowRightOutline class="h-5 w-5" />
+          </A>
+        </div>
+      </div>
+    </section>
+
+
+      <!-- Understanding Warming Stripes Section MOVED BY PETER ON 4-11-2025 -->
       <div class="mt-16 overflow-hidden rounded-xl bg-white shadow-sm">
         <div class="flex flex-col md:flex-row">
           <div
@@ -80,14 +111,11 @@
                 Understanding Warming Stripes
               </h3>
               <p class="mx-auto text-base text-gray-700 md:text-lg">
-                The warming stripes (a.k.a. climate stripes) represent our planet's rising
-                temperatures over time. Each colored stripe is one year - blue for cooler and red
-                for warmer than average. The clear shift from blue to red tells the story of our
-                warming planet.
+                The warming stripes (a.k.a. climate stripes) show our planet's rising temperatures over time. Each stripe is one year, red for warmer-than-average, blue for cooler. The shift to red tells the story of climate change.
               </p>
               <div class="mt-6 flex justify-center md:justify-start">
                 <Button href="/about" color="blue" class="font-medium">
-                  <span>Learn more</span>
+                  <span>Learn more about warming stripes</span>
                   <ArrowRightOutline class="ml-1 h-4 w-4" />
                 </Button>
               </div>
@@ -138,36 +166,8 @@
         </div>
       </div>
 
-      <!-- Take Action Section -->
-      <div id="take-action" class="mt-16 mb-16 scroll-mt-20 pt-4">
-        <div class="mb-10 px-4 text-center md:mb-12">
-          <h2 class="text-terra-dark-blue mb-4 text-2xl font-bold md:text-3xl">
-            Choose Your Path to Climate Action
-          </h2>
-          <p class="mx-auto max-w-2xl text-base text-gray-700 md:text-lg">
-            Join us in taking action. Whether you have time or money to contribute—or neither!—you
-            can make a difference in addressing climate change and healing our planet. Become a
-            terramedic!
-          </p>
-        </div>
 
-        <!-- Action Cards -->
-        <div class="mx-auto max-w-4xl">
-          <ActionCards />
-        </div>
-
-        <!-- Resources Link -->
-        <div class="mt-10 px-4 text-center md:mt-12">
-          <A
-            href="/resources"
-            class="text-terra-dark-blue hover:text-terra-blue inline-flex flex-wrap items-center justify-center text-lg font-medium transition-colors md:text-xl"
-          >
-            <span class="mr-1">Already a climate advocate? Find resources here</span>
-            <ArrowRightOutline class="h-5 w-5" />
-          </A>
-        </div>
-      </div>
-    </section>
+<!-- PETER COMMENTING OUT THIS SECTION 4-11-2025
 
     <!-- About Project Section with Background -->
     <section class="from-terra-blue/10 to-terra-green/10 bg-gradient-to-br py-16">
@@ -217,6 +217,8 @@
       </div>
     </section>
   </main>
+
+-->
 
   <Footer {form} />
 

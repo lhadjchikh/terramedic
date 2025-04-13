@@ -79,7 +79,7 @@
         <p class="mb-4">
           <em>The science is clear, the future is not.</em> - Ed Hawkins
         </p>
-        <p>
+        <p class="mb-4">
           The data used to create warming stripes comes from multiple scientific sources, including:
           NASA's Goddard Institute for Space Studies, NOAA's National Centers for Environmental
           Information, UK Met Office Hadley Centre, and the Berkeley Earth Surface Temperature

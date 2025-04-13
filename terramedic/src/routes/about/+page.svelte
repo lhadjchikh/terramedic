@@ -20,48 +20,32 @@
   <main class="flex-grow">
     <div class="container-narrow py-12">
       <h1 class="text-terra-dark-blue mb-6 text-center text-3xl font-bold md:text-4xl lg:text-5xl">
-        Understanding Warming Stripes
+        Terramedic and Warming Stripes
       </h1>
 
       <div class="mb-8 rounded-lg bg-white p-6 shadow-sm">
-        <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">
-          What are "Warming Stripes"?
-        </h2>
+        <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">What We Do</h2>
         <p class="mb-4">
-          Warming stripes (sometimes called "climate stripes") are a data visualization created by
-          climate scientist Ed Hawkins in 2018. Each colored stripe represents the average
-          temperature for a single year, relative to the average temperature over a baseline period
-          (typically 1971-2000).
-        </p>
-        <p class="mb-4">
-          <strong>Blue stripes</strong> represent years that were <strong>cooler</strong>
-          than the baseline average.
-          <strong>Red stripes</strong> represent years that were <strong>warmer</strong> than the baseline
-          average.
-        </p>
-        <p>
-          The warming stripes tell a clear visual story: our planet has warmed significantly over
-          the past century, with recent decades showing the most dramatic warming.
+          Terramedic turns awareness into action by connecting people who want to solve climate
+          change with meaningful ways to heal our planet.
         </p>
       </div>
 
       <div class="mb-8 rounded-lg bg-white p-6 shadow-sm">
-        <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">Why They Matter</h2>
+        <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">
+          What are Warming Stripes?
+        </h2>
         <p class="mb-4">
-          The beauty of warming stripes lies in their simplicity. They communicate the reality of
-          climate change without technical graphs, numbers, or distracting elements. This makes the
-          climate crisis accessible and understandable to everyone.
+          Terramedic promotes warming stripes everywhere we go because they communicate the story of
+          climate change so powerfully and simply.
         </p>
         <p class="mb-4">
-          The visualization has become an iconic symbol of climate change, appearing on:
+          Created by climate scientist Ed Hawkins in 2018, warming stripes represent the average
+          temperature for individual years, relative to the average temperature over a baseline
+          period, typically 1971-2000. Red stripes represent years that were warmer than the
+          baseline average, from lighter to deeper tones for the bigger differences. Blue stripes
+          show the same for cooler years. Together, they paint the picture of a warming planet.
         </p>
-        <ul class="mb-4 list-disc space-y-1 pl-6">
-          <li>Weather forecasts and news broadcasts</li>
-          <li>Public murals and art installations</li>
-          <li>T-shirts, ties, and other clothing</li>
-          <li>Face masks and accessories</li>
-          <li>And now, the buttons you've received!</li>
-        </ul>
       </div>
 
       <div class="mb-8 rounded-lg bg-white p-6 shadow-sm">
@@ -69,21 +53,20 @@
           The Science Behind the Stripes
         </h2>
         <p class="mb-4">
-          The data used to create warming stripes comes from multiple scientific sources, including:
+          <em>The science is clear, the future is not.</em> - Ed Hawkins
         </p>
-        <ul class="mb-4 list-disc space-y-1 pl-6">
-          <li>NASA's Goddard Institute for Space Studies</li>
-          <li>NOAA's National Centers for Environmental Information</li>
-          <li>UK Met Office Hadley Centre</li>
-          <li>Berkeley Earth Surface Temperature project</li>
-        </ul>
         <p class="mb-4">
-          These organizations maintain long-term temperature records using thousands of weather
-          stations around the world, as well as ocean data from ships and buoys.
+          The data used to create warming stripes comes from multiple scientific sources, including:
+          NASA's Goddard Institute for Space Studies, NOAA's National Centers for Environmental
+          Information, UK Met Office Hadley Centre, and the Berkeley Earth Surface Temperature
+          project. These organizations maintain long-term temperature records using thousands of
+          weather stations around the world, as well as ocean data from ships and buoys. Even with
+          slight differences between these datasets, they all show the same overall pattern: a rapid
+          warming trend, especially since the 1980s.
         </p>
-        <p>
-          While there may be small differences between these datasets, they all show the same
-          overall pattern: a rapid warming trend, especially since the 1980s.
+        <p class="mb-4">
+          The stripes buttons at Terramedic events help people get involved. The first step is
+          wearing one and telling people what it means. The second step is up to you.
         </p>
       </div>
 
@@ -93,16 +76,8 @@
         <div class="flex flex-col md:flex-row">
           <div class="w-full pr-0 md:w-3/5 md:pr-8">
             <p class="mb-4">
-              The warming stripes are a clear call to action. The good news is that it's not too
-              late to make a difference. You can help address climate change right now by
-              volunteering your time or supporting climate organizations financially.
-            </p>
-            <p class="mb-4">
-              Every contribution matters in our collective effort to address the climate crisis and
-              preserve a sustainable future for generations to come.
-            </p>
-            <p class="mb-0 italic md:mb-4">
-              "The science is clear, the future is not." - Ed Hawkins, creator of warming stripes
+              You can help address climate change right now by volunteering your time or supporting
+              climate organizations. Every contribution matters. Choose a path here to get started.
             </p>
           </div>
 

@@ -23,7 +23,6 @@
         Terramedic and Warming Stripes
       </h1>
 
-      <!-- PETER ADDED THIS SECTION AS OVERARCHING ABOUT US STATEMENT 4-11-2025 -->
       <div class="mb-8 rounded-lg bg-white p-6 shadow-sm">
         <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">What We Do</h2>
         <p class="mb-4">
@@ -48,29 +47,6 @@
           show the same for cooler years. Together, they paint the picture of a warming planet.
         </p>
       </div>
-
-      <!-- PETER COMMENTED OUT THIS SECTION 4-11-2025
-
-      <div class="mb-8 rounded-lg bg-white p-6 shadow-sm">
-        <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">Why They Matter</h2>
-        <p class="mb-4">
-          The beauty of warming stripes lies in their simplicity. They communicate the reality of
-          climate change without technical graphs, numbers, or distracting elements. This makes the
-          climate crisis accessible and understandable to everyone.
-        </p>
-        <p class="mb-4">
-          The visualization has become an iconic symbol of climate change, appearing on:
-        </p>
-        <ul class="mb-4 list-disc space-y-1 pl-6">
-          <li>Weather forecasts and news broadcasts</li>
-          <li>Public murals and art installations</li>
-          <li>T-shirts, ties, and other clothing</li>
-          <li>Face masks and accessories</li>
-          <li>And now, the buttons you've received!</li>
-        </ul>
-      </div>
-
--->
 
       <div class="mb-8 rounded-lg bg-white p-6 shadow-sm">
         <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">

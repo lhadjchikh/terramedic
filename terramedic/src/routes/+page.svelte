@@ -99,7 +99,6 @@
       </div>
     </section>
 
-    <!-- Understanding Warming Stripes Section MOVED BY PETER ON 4-11-2025 -->
     <div class="mt-16 overflow-hidden rounded-xl bg-white shadow-sm">
       <div class="flex flex-col md:flex-row">
         <div

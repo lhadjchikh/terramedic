@@ -59,21 +59,45 @@
         </p>
       </div>
 
-      <div class="mb-8 rounded-lg bg-white p-6 shadow-sm">
-        <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">
-          What are Warming Stripes?
-        </h2>
-        <p class="mb-4">
-          Terramedic promotes warming stripes everywhere we go because they communicate the story of
-          climate change so powerfully and simply.
-        </p>
-        <p class="mb-4">
-          Created by climate scientist Ed Hawkins in 2018, warming stripes represent the average
-          temperature for individual years, relative to the average temperature over a baseline
-          period, typically 1971-2000. Red stripes represent years that were warmer than the
-          baseline average, from lighter to deeper tones for the bigger differences. Blue stripes
-          show the same for cooler years. Together, they paint the picture of a warming planet.
-        </p>
+      <div class="mb-16 rounded-lg bg-white shadow-sm">
+        <div class="flex flex-col md:flex-row">
+          <!-- Button image on the top for mobile, right for larger screens -->
+          <div class="order-1 flex w-full items-center justify-center p-8 md:order-2 md:w-1/3">
+            <div
+              class="relative max-w-[220px] overflow-hidden rounded-lg shadow-md transition-transform hover:scale-105"
+            >
+              <img
+                src="/images/warming-stripes-button.png"
+                alt="Climate warming stripes button"
+                class="h-auto w-full"
+              />
+              <div class="absolute inset-0 rounded-lg ring-1 ring-gray-300/30"></div>
+            </div>
+          </div>
+
+          <!-- Text content on the bottom for mobile, left for larger screens -->
+          <div class="order-2 w-full p-8 md:order-1 md:w-2/3">
+            <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">
+              What are Warming Stripes?
+            </h2>
+            <p class="mb-4">
+              Terramedic promotes warming stripes everywhere we go because they communicate the
+              story of climate change so powerfully and simply.
+            </p>
+            <p class="mb-4">
+              Created by climate scientist Ed Hawkins in 2018, warming stripes represent the average
+              temperature for individual years, relative to the average temperature over a baseline
+              period, typically 1961-2010. Red stripes represent years that were warmer than the
+              baseline average, from lighter to deeper tones for the bigger differences. Blue
+              stripes show the same for cooler years. Together, they paint the picture of a warming
+              planet.
+            </p>
+            <p class="mb-4">
+              The stripes buttons at Terramedic events help people get involved. The first step is
+              wearing one and telling people what it means. The second step is up to you.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div class="mb-16 overflow-hidden rounded-xl bg-white shadow-sm">

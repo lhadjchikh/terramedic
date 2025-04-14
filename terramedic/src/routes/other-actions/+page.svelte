@@ -121,10 +121,6 @@
           contributing to the broader movement. As your circumstances change, you may find new
           opportunities to engage more deeply through volunteering or donations.
         </p>
-        <p class="mt-6 text-center italic">
-          "The most important thing you can do to fight climate change: talk about it." - Dr.
-          Katharine Hayhoe
-        </p>
       </div>
 
       <div class="text-center">

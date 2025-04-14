@@ -51,12 +51,26 @@
         Terramedic and Warming Stripes
       </h1>
 
-      <div class="mb-8 rounded-lg bg-white p-6 shadow-sm">
-        <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">What We Do</h2>
-        <p class="mb-4">
-          Terramedic turns awareness into action by connecting people who want to solve climate
-          change with meaningful ways to heal our planet.
-        </p>
+      <div class="mb-16 rounded-lg bg-white p-8 shadow-sm">
+        <div class="flex flex-col items-center md:flex-row">
+          <!-- Image on the left -->
+          <div class="relative mb-16 flex w-full justify-center md:mr-8 md:mb-8 md:w-1/3">
+            <img
+              src="/images/terramedic-globe.svg"
+              alt="Terramedic Globe"
+              class="h-auto max-w-full"
+            />
+          </div>
+
+          <!-- Text block -->
+          <div class="w-full md:w-2/3">
+            <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">What We Do</h2>
+            <p class="mb-4">
+              Terramedic turns awareness into action by connecting people who want to solve climate
+              change with meaningful ways to heal our planet.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div class="mb-16 rounded-lg bg-white shadow-sm">

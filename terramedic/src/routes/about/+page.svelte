@@ -47,7 +47,7 @@
 
   <main class="flex-grow">
     <div class="container-narrow py-12">
-      <h1 class="text-terra-dark-blue mb-6 text-center text-3xl font-bold md:text-4xl lg:text-5xl">
+      <h1 class="text-terra-dark-blue mb-12 text-center text-3xl font-bold md:text-4xl lg:text-5xl">
         Terramedic and Warming Stripes
       </h1>
 
@@ -184,17 +184,17 @@
       </div>
 
       <div class="mb-16 rounded-lg bg-white p-6 shadow-sm">
-        <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">Take Action Now</h2>
-
+        
         <div class="flex flex-col md:flex-row">
           <div class="w-full pr-0 md:w-3/5 md:pr-8">
+            <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">Take Action Now</h2>
             <p class="mb-4">
               You can help address climate change right now by volunteering your time or supporting
               climate organizations. Every contribution matters. Choose a path here to get started.
             </p>
           </div>
 
-          <div class="mt-6 w-full md:mt-0 md:w-2/5">
+          <div class="mt-2 w-full md:mt-0 md:w-2/5">
             <div class="flex flex-col gap-4">
               <ActionButton text="Volunteer Your Time" href="/volunteer" type="primary" />
               <ActionButton

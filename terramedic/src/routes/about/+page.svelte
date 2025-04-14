@@ -117,7 +117,7 @@
       <div class="mb-16 overflow-hidden rounded-xl bg-white shadow-sm">
         <div class="flex flex-col md:flex-row">
           <div class="from-terra-blue to-terra-dark-blue w-full bg-gradient-to-br p-8 md:w-1/2">
-            <div class="relative flex flex-col h-[250px] items-center justify-center md:h-full">
+            <div class="relative flex h-[250px] flex-col items-center justify-center md:h-full">
               <div
                 class="absolute inset-0 bg-[url('/images/WarmingStripes-1850-2024.png')] bg-cover bg-center opacity-10"
               ></div>
@@ -184,7 +184,6 @@
       </div>
 
       <div class="mb-16 rounded-lg bg-white p-6 shadow-sm">
-        
         <div class="flex flex-col md:flex-row">
           <div class="w-full pr-0 md:w-3/5 md:pr-8">
             <h2 class="text-terra-dark-blue mb-4 text-xl font-bold md:text-2xl">Take Action Now</h2>

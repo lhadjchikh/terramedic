@@ -167,7 +167,7 @@
           <div class="mb-16 flex w-full items-center p-8 md:w-1/2 md:justify-start md:text-left">
             <div>
               <h2 class="text-terra-dark-blue mx-auto mb-4 text-2xl font-bold md:mx-0 md:text-3xl">
-                The Science Behind&nbsp;the Stripes
+                The Science<br />Behind&nbsp;the Stripes
               </h2>
               <p class="mb-4">
                 The data used to create warming stripes comes from multiple scientific sources,

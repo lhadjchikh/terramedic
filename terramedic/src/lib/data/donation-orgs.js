@@ -33,6 +33,16 @@ export const donationOrganizations = [
   },
   {
     id: 4,
+    name: 'Climate Changemakers',
+    description:
+      'A nationwide advocacy network helping busy people take meaningful civic action on climate. Your donation funds free resources, events, and organizers who equip advocates to engage with policymakers in all 50 states.',
+    websiteUrl: 'https://www.climatechangemakers.org/donate',
+    imageUrl: '/images/placeholder-climate-changemakers.jpg', // Replace with actual image
+    tags: ['Civic Action', 'Advocacy', 'Community'],
+    actionText: 'Power Civic Engagement'
+  },
+  {
+    id: 4,
     name: "Citizens' Climate Lobby",
     description:
       'A non-profit, nonpartisan organization that empowers everyday people to work with their elected officials on climate change solutions. Donations support their grassroots advocacy for effective climate policies.',

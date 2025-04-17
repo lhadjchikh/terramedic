@@ -3,16 +3,6 @@
 export const donationOrganizations = [
   {
     id: 1,
-    name: 'Give Green',
-    description:
-      'A platform that helps climate-concerned donors direct their political giving to candidates who are leading on climate action. They vet and highlight candidates at all levels of government who can make a difference on climate policy.',
-    websiteUrl: 'https://givegreen.com/',
-    imageUrl: '/images/givegreen.jpg',
-    tags: ['Political Giving', 'Electoral Impact', 'Climate Champions'],
-    actionText: 'Donate to Candidates'
-  },
-  {
-    id: 2,
     name: 'Climate Cabinet',
     description:
       'Provides local candidates and elected officials with the tools, data, and policy resources they need to run and win on climate action. They enable local action through data-driven tools and resources.',
@@ -20,6 +10,16 @@ export const donationOrganizations = [
     imageUrl: '/images/placeholder-climate-cabinet.jpg', // Replace with actual image
     tags: ['Local Politics', 'Data', 'Policy Resources'],
     actionText: 'Support Local Climate Action'
+  },
+  {
+    id: 2,
+    name: 'Give Green',
+    description:
+      'A platform that helps climate-concerned donors direct their political giving to candidates who are leading on climate action. They vet and highlight candidates at all levels of government who can make a difference on climate policy.',
+    websiteUrl: 'https://givegreen.com/',
+    imageUrl: '/images/givegreen.jpg',
+    tags: ['Political Giving', 'Electoral Impact', 'Climate Champions'],
+    actionText: 'Donate to Candidates'
   },
   {
     id: 3,

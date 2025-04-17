@@ -42,10 +42,10 @@ export const donationOrganizations = [
     actionText: 'Power Civic Engagement'
   },
   {
-    id: 4,
+    id: 5,
     name: "Citizens' Climate Lobby",
     description:
-      'A non-profit, nonpartisan organization that empowers everyday people to work with their elected officials on climate change solutions. Donations support their grassroots advocacy for effective climate policies.',
+      'A nonpartisan grassroots organization with over 500 chapters worldwide, empowering everyday people to influence climate policy. Your donation funds volunteer training, advocacy tools, and congressional outreach to help pass bipartisan climate bills.',
     websiteUrl: 'https://citizensclimatelobby.org/donate/',
     imageUrl: '/images/placeholder-ccl.jpg', // Replace with actual image
     tags: ['Advocacy', 'Bipartisan', 'Carbon Pricing'],
